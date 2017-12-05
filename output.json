@@ -1,0 +1,260 @@
+{
+	"fb": {
+		"index": 1049344,
+		"name": "FLASH_DF_BLOCK_12",
+		"list": [
+			{
+				"id": 1049344,
+				"name": "gyroTh_R",
+				"value": "0.00106325",
+				"descript": "ゲイン(ジャイロ)右回転"
+			},
+			{
+				"id": 1049348,
+				"name": "gyroTh_L",
+				"value": "0.00106525",
+				"descript": "ゲイン(ジャイロ)左回転"
+			},
+			{
+				"id": 1049352,
+				"name": "Vel.Kp",
+				"value": "0.00325",
+				"descript": "重心速度ゲイン P"
+			},
+			{
+				"id": 1049356,
+				"name": "Vel.Ki",
+				"value": "0.00125",
+				"descript": "重心速度ゲイン I"
+			},
+			{
+				"id": 1049360,
+				"name": "Vel.Kd",
+				"value": "0.0",
+				"descript": "重心速度ゲイン D"
+			},
+			{
+				"id": 1049364,
+				"name": "Gyro.Kp",
+				"value": "1.25",
+				"descript": "角速度ゲイン P"
+			},
+			{
+				"id": 1049368,
+				"name": "Gyro.Ki",
+				"value": "0.01",
+				"descript": "角速度ゲイン I"
+			},
+			{
+				"id": 1049372,
+				"name": "Gyro.Kd",
+				"value": "10.5",
+				"descript": "角速度ゲイン D"
+			},
+			{
+				"id": 1049376,
+				"name": "Sen.Kp",
+				"value": "0.0025",
+				"descript": "通常時直進ゲイン P"
+			},
+			{
+				"id": 1049380,
+				"name": "Sen.Ki",
+				"value": "0.001",
+				"descript": "通常時直進ゲイン I"
+			},
+			{
+				"id": 1049384,
+				"name": "Sen.Kd",
+				"value": "0.065",
+				"descript": "通常時直進ゲイン D"
+			},
+			{
+				"id": 1049388,
+				"name": "Sen_Dia.Kp",
+				"value": "0.01",
+				"descript": "斜め直進ゲイン P"
+			},
+			{
+				"id": 1049392,
+				"name": "Sen_Dia.Ki",
+				"value": "0",
+				"descript": "斜め直進ゲイン I"
+			},
+			{
+				"id": 1049396,
+				"name": "Sen_Dia.Kd",
+				"value": "0",
+				"descript": "斜め直進ゲイン D"
+			},
+			{
+				"id": 1049400,
+				"name": "FrontCtrl.Kp",
+				"value": "0.125",
+				"descript": "前壁制御ゲインP"
+			},
+			{
+				"id": 1049404,
+				"name": "FrontCtrl.Ki",
+				"value": "0",
+				"descript": "前壁制御ゲインI"
+			}
+		]
+	},
+	"sensor": {
+		"index": 1049600,
+		"name": "FLASH_DF_BLOCK_16",
+		"list": [
+			{
+				"id": 1049600,
+				"name": "RS_SEN1.ref",
+				"value": "562",
+				"descript": "直進時中央右センサー"
+			},
+			{
+				"id": 1049604,
+				"name": "LS_SEN1.ref",
+				"value": "710",
+				"descript": "直進時中央左センサー"
+			},
+			{
+				"id": 1049608,
+				"name": "RS_SEN1.ref2",
+				"value": "1025",
+				"descript": "斜め直進時中央右センサー"
+			},
+			{
+				"id": 1049612,
+				"name": "LS_SEN1.ref2",
+				"value": "1425",
+				"descript": "斜め直進時中央左センサー"
+			},
+			{
+				"id": 1049616,
+				"name": "RF_SEN1.ref",
+				"value": "200",
+				"descript": "斜め直進時中央右前センサー（壁ナシ）"
+			},
+			{
+				"id": 1049620,
+				"name": "RF_SEN1.ref2",
+				"value": "200",
+				"descript": "斜め直進時中央右前センサー（壁アリ）"
+			},
+			{
+				"id": 1049624,
+				"name": "LF_SEN1.ref",
+				"value": "250",
+				"descript": "斜め直進時中央左前センサー（壁ナシ）"
+			},
+			{
+				"id": 1049628,
+				"name": "LF_SEN1.ref2",
+				"value": "250",
+				"descript": "斜め直進時中央左前センサー（壁アリ）"
+			},
+			{
+				"id": 1049632,
+				"name": "RF_SEN1.ref3",
+				"value": "1688",
+				"descript": "前壁制御理想値右前"
+			},
+			{
+				"id": 1049636,
+				"name": "LF_SEN1.ref3",
+				"value": "1666",
+				"descript": "前壁制御理想値左前"
+			},
+			{
+				"id": 1049640,
+				"name": "wallhosei",
+				"value": "100",
+				"descript": "探索時バッグするかの閾値"
+			},
+			{
+				"id": 1049644,
+				"name": "FrontCtrl.Kp",
+				"value": "0.125",
+				"descript": "前壁吸い込み制御Pゲイン"
+			},
+			{
+				"id": 1049648,
+				"name": "FrontCtrl.Ki",
+				"value": "0",
+				"descript": "前壁吸い込み制御Iゲイン"
+			}
+		]
+	},
+	"ff": {
+		"index": 1049216,
+		"name": "FLASH_DF_BLOCK_10",
+		"list": [
+			{
+				"id": 1049216,
+				"name": "TIRE",
+				"value": "24.745",
+				"descript": "タイヤ直径(mm)"
+			},
+			{
+				"id": 1049220,
+				"name": "GEAR_A",
+				"value": "63",
+				"descript": "ホイール側ギア"
+			},
+			{
+				"id": 1049224,
+				"name": "GEAR_B",
+				"value": "19",
+				"descript": "ピニオン側ギア"
+			},
+			{
+				"id": 1049228,
+				"name": "DUTY_MAX",
+				"value": "99.9",
+				"descript": "Duty上限(%)"
+			},
+			{
+				"id": 1049232,
+				"name": "Ke",
+				"value": "0.000368613538",
+				"descript": "電気的時定数"
+			},
+			{
+				"id": 1049236,
+				"name": "Km",
+				"value": "0.00352",
+				"descript": "機械的時定数"
+			},
+			{
+				"id": 1049240,
+				"name": "Resist",
+				"value": "2.93",
+				"descript": "モーター内抵抗値"
+			},
+			{
+				"id": 1049244,
+				"name": "Mass",
+				"value": "0.101",
+				"descript": "質量(kg)"
+			},
+			{
+				"id": 1049248,
+				"name": "Lm",
+				"value": "0.001",
+				"descript": "慣性モーメント"
+			},
+			{
+				"id": 1049252,
+				"name": "friction",
+				"value": "0.00125",
+				"descript": "摩擦係数（直進）"
+			},
+			{
+				"id": 1049256,
+				"name": "friction2",
+				"value": "0.001925",
+				"descript": "摩擦係数（平進）"
+			}
+		]
+	}
+}

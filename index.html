@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exia Console</title>
+	<link rel="shortcut icon" type="image/png" href="assets/img/brand-u.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/example.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css" type="text/css"></link>
+	<script src="js/socket.io.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/slalom.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/angularsetup.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://nkmr6194.github.io/Umi/" class="navbar-brand">Exia Console</a>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="javascript:changeDisplay('sensor');">Sensor </a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('map');">Map</a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('walls_g');">SensorGraph</a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('Slalom');">Slalom</a>
+						</li>
+						<li>
+							<a href="javascript:toggleConnection();" id="connection" class="disconnect">切断中</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div id="sensor" class="jumbotron special">
+			<div id="exia" ng-controller="HelloWorldController">
+				<img id="target" src="img/exia.png">
+				<div id="ls2"></div>
+				<div id="rs2"></div>
+				<div id="ls1"></div>
+				<div id="rs1"></div>
+				<div id="lf1"></div>
+				<div id="rf1"></div>
+				<div id="gyro"></div>
+				<div id="battery"></div>
+				<div class="btnlist">
+					<button ng-click="load()" class="btn-success">
+						LOAD
+					</button>
+				</div>
+				<div class="bs-component" id="tab1">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#flash_feadforword" data-toggle="tab">FeedForward</a>
+						</li>
+						<li>
+							<a href="#flash_feadback" data-toggle="tab">FeedBack</a>
+						</li>
+						<li>
+							<a href="#flash_sensor" data-toggle="tab">Sensor</a>
+						</li>
+						<li>
+							<a href="#flash_testmotion" data-toggle="tab">Search</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								FastRun
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#dropdown1" data-toggle="tab">1200</a>
+								</li>
+								<li>
+									<a href="#dropdown2" data-toggle="tab">1300</a>
+								</li>
+								<li>
+									<a href="#dropdown2" data-toggle="tab">1400</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="flash_feadforword">
+							<div class="paramlist1">
+								<div style="text-align:left;padding-left:60px;">BlockName = {{recieveData.ff.name}}</div>
+								<div style="text-align:left;padding-left:60px;">StartAddress = {{recieveData.ff.index}}</div>
+								<ul>
+									<li ng-repeat="param in ffparamList" class="paramlist">
+										<div class="index">
+											{{$index}}
+										</div>
+										<div class="paramid">
+											<div ng-if="!param.isNew">
+												{{param.id}}
+											</div>
+											<div ng-if="param.isNew">
+												<input type="text" class="form-control" class="paramid2" ng-model="param.id">
+											</div>
+										</div>
+										<div class="name">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.name">
+										</div>
+										<div class="value">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.value">
+										</div>
+										<div class="update">
+											<a ng-click="update('ff',param)" class="btn btn-success">update</a>
+										</div>
+										<div class="descript">
+											<input type="text" class="form-control" style="width:300px;" ng-model="param.descript" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<button ng-click="getAllFFDataScript()" class="btn-success copy">
+								COPY
+							</button>
+						</div>
+						<div class="tab-pane fade" id="flash_feadback">
+							<div class="paramlist1">
+								<div style="text-align:left;padding-left:60px;">BlockName = {{recieveData.fb.name}}</div>
+								<div style="text-align:left;padding-left:60px;">StartAddress = {{recieveData.fb.index}}</div>
+								<ul>
+									<li ng-repeat="param in fbparamList" class="paramlist">
+										<div class="index">
+											{{$index}}
+										</div>
+										<div class="paramid">
+											<div ng-if="!param.isNew">
+												{{param.id}}
+											</div>
+											<div ng-if="param.isNew">
+												<input type="text" class="form-control" class="paramid2" ng-model="param.id">
+											</div>
+										</div>
+										<div class="name">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.name">
+										</div>
+										<div class="value">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.value">
+										</div>
+										<div class="update">
+											<a ng-click="update('fb',param)" class="btn btn-success">update</a>
+										</div>
+										<!-- <div style="width:150px;float:left;">
+											<input type="text" style="width:150px;" value="{{param.name}}=*(float *)({{param.id}});" />
+										</div> -->
+										<div class="descript">
+											<input type="text" class="form-control" style="width:300px;" ng-model="param.descript" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<button ng-click="getAllFBDataScript()" class="btn-success copy">
+								COPY
+							</button>
+						</div>
+						<div class="tab-pane fade" id="flash_sensor">
+							<div class="paramlist1">
+								<div style="text-align:left;padding-left:60px;">BlockName = {{recieveData.sensor.name}}</div>
+								<div style="text-align:left;padding-left:60px;">StartAddress = {{recieveData.sensor.index}}</div>
+								<ul>
+									<li ng-repeat="param in sensorparamList" class="paramlist">
+										<div class="index">
+											{{$index}}
+										</div>
+										<div class="paramid">
+											<div ng-if="!param.isNew">
+												{{param.id}}
+											</div>
+											<div ng-if="param.isNew">
+												<input type="text" class="form-control" class="paramid2" ng-model="param.id">
+											</div>
+										</div>
+										<div class="name">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.name">
+										</div>
+										<div class="value">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.value">
+										</div>
+										<div class="update">
+											<a ng-click="update('sensor',param)" class="btn btn-success">update</a>
+										</div>
+										<!-- <div style="width:150px;float:left;">
+											<input type="text" style="width:150px;" value="{{param.name}}=*(float *)({{param.id}});" />
+										</div> -->
+										<div class="descript">
+											<input type="text" class="form-control" style="width:300px;" ng-model="param.descript" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<button ng-click="getSensorScript()" class="btn-success copy">
+								COPY
+							</button>
+						</div>
+						<div class="tab-pane fade" id="flash_testmotion">
+						</div>
+					</div>
+					<textarea id="hoge"></textarea>
+					<div id="consolebtn">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="map" class="jumbotron special">
+			<h2>map</h2>
+			<table id="map_data" style="position:relative;float: left;">
+			</table>
+			<button id="map_resultBtn">データの出力</button>
+			<button id="map_create16">16*16</button>
+			<button id="map_create32">32*32</button>
+			<textarea id="map_result" style="position:relative;float: left;"></textarea>
+		</div>
+		<div id="walls_g" class="jumbotron special" style="display: none">
+			<div style="position:absolute;top:150px;left:0px;width:90px">
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" id="LS1_g" checked> LS1
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" id="RS1_g" checked> RS1
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" id="LS2_g" checked> LS2
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" id="RS2_g" checked> RS2
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" id="LF1_g" checked> LF1
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" id="RF1_g" checked> RF1
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div style="position:relative;top:25px;left:50px;width:100%;" style="display: none">
+				<div id="walls_g2" style="position:relative;float: left;"></div>
+				<div id="battery_g2" style="position:relative;float: left;padding-left: 10px;"></div>
+			</div>
+			<div id="gyro_g2" style="position:relative;top:50px;left:50px;"></div>
+		</div>
+		<div id="gyro_g" class="jumbotron special" style="display: none">
+			<h2>gyro</h2>
+			<div id="gyro_g2"></div>
+		</div>
+		<div id="Slalom" class="jumbotron special">
+			<table>
+				<tr>
+					<td>
+						<div id="slalom_g"></div>
+					</td>
+					<td>
+						<ul class="turn_ul">
+							<li>
+								<span>速度</span>
+								<input type="text" id="velocity" value="1000" />
+							</li>
+							<li>
+								<span>半径</span>
+								<input type="text" id="radius" value="88" />
+							</li>
+							<li>
+								<span>ネイピア定数</span>
+								<input type="text" id="napier" value="4" />
+							</li>
+							<li>
+								<button id="turn_btn">更新</button>
+							</li>
+						</ul>
+					</td>
+					<td class="turn_kind">
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Normal" class="turn_kinds" checked/>Normal
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Large" class="turn_kinds" />Large
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Orval" class="turn_kinds" />Orval
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Dia45" class="turn_kinds" />Dia45
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Dia135" class="turn_kinds" />Dia135
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="turn" value="Dia90" class="turn_kinds" />Dia90
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="js/bootstrap.min.js "></script>
+		<div id="fb-root "></div>
+		<script type="text/javascript " src="https://b.st-hatena.com/js/bookmark_button.js " charset="utf-8 " async="async "></script>
+</body>
+
+</html>
