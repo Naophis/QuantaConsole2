@@ -6,31 +6,31 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.00106325",
+				"value": "0.001056",
 				"descript": "ゲイン(ジャイロ)右回転"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.00106525",
+				"value": "0.0010556",
 				"descript": "ゲイン(ジャイロ)左回転"
 			},
 			{
 				"id": 1049352,
 				"name": "Vel.Kp",
-				"value": "0.00325",
+				"value": "0.004125",
 				"descript": "重心速度ゲイン P"
 			},
 			{
 				"id": 1049356,
 				"name": "Vel.Ki",
-				"value": "0.00125",
+				"value": "0.00075",
 				"descript": "重心速度ゲイン I"
 			},
 			{
 				"id": 1049360,
 				"name": "Vel.Kd",
-				"value": "0.0",
+				"value": "0.0045",
 				"descript": "重心速度ゲイン D"
 			},
 			{
@@ -54,36 +54,36 @@
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.0025",
-				"descript": "通常時直進ゲイン P"
+				"value": "0.035",
+				"descript": "通常時直進ゲイン P0.025"
 			},
 			{
 				"id": 1049380,
 				"name": "Sen.Ki",
-				"value": "0.001",
-				"descript": "通常時直進ゲイン I"
+				"value": "0.000125",
+				"descript": "通常時直進ゲイン I0.01"
 			},
 			{
 				"id": 1049384,
 				"name": "Sen.Kd",
-				"value": "0.065",
-				"descript": "通常時直進ゲイン D"
+				"value": "0.08",
+				"descript": "通常時直進ゲイン D0.065"
 			},
 			{
 				"id": 1049388,
-				"name": "Sen_Dia.Kp",
-				"value": "0.01",
+				"name": "Sen_Dia_Side.Kp",
+				"value": "0.00175",
 				"descript": "斜め直進ゲイン P"
 			},
 			{
 				"id": 1049392,
-				"name": "Sen_Dia.Ki",
-				"value": "0",
+				"name": "Sen_Dia_Side.Ki",
+				"value": "0.0000",
 				"descript": "斜め直進ゲイン I"
 			},
 			{
 				"id": 1049396,
-				"name": "Sen_Dia.Kd",
+				"name": "Sen_Dia_Side.Kd",
 				"value": "0",
 				"descript": "斜め直進ゲイン D"
 			},
@@ -107,38 +107,38 @@
 		"list": [
 			{
 				"id": 1049600,
-				"name": "RS_SEN1.ref",
-				"value": "562",
+				"name": "RS_SEN45.ref",
+				"value": "790",
 				"descript": "直進時中央右センサー"
 			},
 			{
 				"id": 1049604,
-				"name": "LS_SEN1.ref",
-				"value": "710",
+				"name": "LS_SEN45.ref",
+				"value": "668",
 				"descript": "直進時中央左センサー"
 			},
 			{
 				"id": 1049608,
-				"name": "RS_SEN1.ref2",
-				"value": "1025",
+				"name": "RS_SEN45.ref2",
+				"value": "1900",
 				"descript": "斜め直進時中央右センサー"
 			},
 			{
 				"id": 1049612,
-				"name": "LS_SEN1.ref2",
-				"value": "1425",
+				"name": "LS_SEN45.ref2",
+				"value": "2100",
 				"descript": "斜め直進時中央左センサー"
 			},
 			{
 				"id": 1049616,
-				"name": "RF_SEN1.ref",
+				"name": "Front_SEN.ref",
 				"value": "200",
 				"descript": "斜め直進時中央右前センサー（壁ナシ）"
 			},
 			{
 				"id": 1049620,
-				"name": "RF_SEN1.ref2",
-				"value": "200",
+				"name": "Front_SEN.ref2",
+				"value": "0",
 				"descript": "斜め直進時中央右前センサー（壁アリ）"
 			},
 			{
@@ -150,19 +150,19 @@
 			{
 				"id": 1049628,
 				"name": "LF_SEN1.ref2",
-				"value": "250",
+				"value": "0",
 				"descript": "斜め直進時中央左前センサー（壁アリ）"
 			},
 			{
 				"id": 1049632,
-				"name": "RF_SEN1.ref3",
-				"value": "1688",
+				"name": "Front_SEN.ref3",
+				"value": "2143",
 				"descript": "前壁制御理想値右前"
 			},
 			{
 				"id": 1049636,
 				"name": "LF_SEN1.ref3",
-				"value": "1666",
+				"value": "0",
 				"descript": "前壁制御理想値左前"
 			},
 			{
@@ -182,6 +182,179 @@
 				"name": "FrontCtrl.Ki",
 				"value": "0",
 				"descript": "前壁吸い込み制御Iゲイン"
+			},
+			{
+				"id": 1049652,
+				"name": "RS_SEN2.ref2",
+				"value": "1800"
+			},
+			{
+				"id": 1049656,
+				"name": "LS_SEN2.ref2",
+				"value": "1725"
+			},
+			{
+				"id": 1049660,
+				"name": "R_WALL_DIA",
+				"value": "1600"
+			},
+			{
+				"id": 1049664,
+				"name": "L_WALL_DIA",
+				"value": "1200"
+			},
+			{
+				"id": 1049668,
+				"name": "R_WALL_DIA2",
+				"value": "1400"
+			},
+			{
+				"id": 1049672,
+				"name": "L_WALL_DIA2",
+				"value": "1400"
+			},
+			{
+				"id": 1049676,
+				"name": "R_WALL_DIA3",
+				"value": "1400"
+			},
+			{
+				"id": 1049680,
+				"name": "R_WALL_DIA3",
+				"value": "1200"
+			},
+			{
+				"id": 1049684,
+				"name": "L_WALL_EXIST2",
+				"value": "1600"
+			},
+			{
+				"id": 1049688,
+				"name": "R_WALL_EXIST2",
+				"value": "1800"
+			},
+			{
+				"id": 1049692,
+				"name": "FRONT_WALL_EXIST2",
+				"value": "740"
+			},
+			{
+				"id": 1049696,
+				"name": "L_WALL_EXIST3",
+				"value": "450"
+			},
+			{
+				"id": 1049700,
+				"name": "R_WALL_EXIST3",
+				"value": "450"
+			},
+			{
+				"id": 1049704,
+				"name": "FRONT_WALL_EXIST3",
+				"value": "300"
+			},
+			{
+				"id": 1049708,
+				"name": "running_wall_off_l",
+				"value": "1111"
+			},
+			{
+				"id": 1049712,
+				"name": "running_wall_off_r",
+				"value": "444"
+			},
+			{
+				"id": 1049716,
+				"name": "search_wall_off_l",
+				"value": "1500"
+			},
+			{
+				"id": 1049720,
+				"name": "search_wall_off_r",
+				"value": "1500"
+			}
+		]
+	},
+	"walloff": {
+		"index": 1049856,
+		"name": "FLASH_DF_BLOCK_20",
+		"list": [
+			{
+				"id": 1049856,
+				"name": "R_WALL_OFF",
+				"value": "590",
+				"descript": "タイヤ直径(mm)"
+			},
+			{
+				"id": 1049860,
+				"name": "L_WALL_OFF",
+				"value": "530"
+			},
+			{
+				"id": 1049864,
+				"name": "R_WALL_OFF2",
+				"value": "590",
+				"descript": ""
+			},
+			{
+				"id": 1049868,
+				"name": "L_WALL_OFF2",
+				"value": "530"
+			},
+			{
+				"id": 1049872,
+				"name": "R_WALL_OFF_D",
+				"value": "1700"
+			},
+			{
+				"id": 1049876,
+				"name": "L_WALL_OFF_D",
+				"value": "1400"
+			},
+			{
+				"id": 1049880,
+				"name": "existRightWall5",
+				"value": "3900"
+			},
+			{
+				"id": 1049884,
+				"name": "existLeftWall5",
+				"value": "3900"
+			},
+			{
+				"id": 1049888,
+				"name": "R_WALL_OFF_D2",
+				"value": "1700"
+			},
+			{
+				"id": 1049892,
+				"name": "L_WALL_OFF_D2",
+				"value": "1400"
+			},
+			{
+				"id": 1049896,
+				"name": "FRONT_WALL_ON",
+				"value": "720"
+			},
+			{
+				"id": 1049900,
+				"name": "FRONT_WALL_ORDER",
+				"value": "420"
+			},
+			{
+				"id": 1049904,
+				"name": "DIA_N_LEFT_WALL",
+				"value": "850"
+			},
+			{
+				"id": 1049908,
+				"name": "DIA_N_RIGHT_WALL",
+				"value": "910"
+			},
+			{
+				"id": 1049912,
+				"name": "DIA_FRONT_WALL_ORDER",
+				"value": "360"
 			}
 		]
 	},
@@ -192,19 +365,19 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "24.745",
+				"value": "23.975",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
 				"id": 1049220,
 				"name": "GEAR_A",
-				"value": "63",
+				"value": "67",
 				"descript": "ホイール側ギア"
 			},
 			{
 				"id": 1049224,
 				"name": "GEAR_B",
-				"value": "19",
+				"value": "21",
 				"descript": "ピニオン側ギア"
 			},
 			{
@@ -234,7 +407,7 @@
 			{
 				"id": 1049244,
 				"name": "Mass",
-				"value": "0.101",
+				"value": "0.106",
 				"descript": "質量(kg)"
 			},
 			{

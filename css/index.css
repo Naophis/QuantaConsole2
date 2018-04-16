@@ -36,7 +36,7 @@
 #exia #ls2 {
     position: inherit;
     top: 20px;
-    left: 100px;
+    left: 80px;
     color: white;
     font-size:24px;
 }
@@ -44,7 +44,7 @@
 #exia #rs2 {
     position: inherit;
     top: 20px;
-    right: 100px;
+    right: 80px;
     color: white;
     font-size:24px;
 }
@@ -83,7 +83,7 @@
 
 #exia #gyro {
     position: inherit;
-    bottom: 80px;
+    top: 225px;
     left: 150px;
     text-align: center;
     color: white;
@@ -92,7 +92,7 @@
 
 #exia #battery {
     position: inherit;
-    bottom: 15px;
+    top: 285px;
     left: 150px;
     text-align: center;
     color: white;
@@ -107,6 +107,57 @@
     height: 300px;
     background-color: transparent;
 }
+
+
+
+#exia #ls2_2 {
+    position: inherit;
+    top: 350px;
+    left: 100px;
+    color: white;
+    font-size:24px;
+}
+
+#exia #rs2_2 {
+    position: inherit;
+    top: 350px;
+    right: 100px;
+    color: white;
+    font-size:24px;
+}
+
+#exia #ls1_2 {
+    position: inherit;
+    top: 400px;
+    left: 70px;
+    color: white;
+    font-size:24px;
+}
+
+#exia #rs1_2 {
+    position: inherit;
+    top: 400px;
+    right: 70px;
+    color: white;
+    font-size:24px;
+}
+
+#exia #lf1_2 {
+    position: inherit;
+    top: 450px;
+    left: 35px;
+    color: white;
+    font-size:24px;
+}
+
+#exia #rf1_2 {
+    position: inherit;
+    top: 450px;
+    right: 35px;
+    color: white;
+    font-size:24px;
+}
+
 
 #map_result {
     /*position: absolute;*/
@@ -177,6 +228,12 @@ body {
 
 .btn2:target {
     outline: none;
+}
+
+#target2{
+    position: absolute;
+    padding-top: 10px;
+    left:0px;
 }
 
 .btn2:active {
@@ -288,8 +345,8 @@ body {
 }
 
 #slalom_g {
-    width: 500px;
-    height: 700px;
+    width: 700px;
+    height: 800px;
     float: left;
 }
 

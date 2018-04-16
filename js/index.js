@@ -28,16 +28,16 @@ $(document).ready(function () {
     socket.on('connect', function (data) {
         socket.headbeatTimeout = 5000;
         connected = true;
-        $("#connection").html("接続中");
-        $("#connection").addClass("connect");
-        $("#connection").removeClass("disconnect");
+        $("#connection").html("接続中")
+            .addClass("connect")
+            .removeClass("disconnect");
         slalom = new Slalom(socket);
     });
     socket.on('disconnect', function (data) {
         clearInterval(interval);
-        $("#connection").html("切断中");
-        $("#connection").addClass("disconnect");
-        $("#connection").removeClass("connect");
+        $("#connection").html("切断中")
+            .addClass("disconnect")
+            .removeClass("connect");
         slalom = null;
     });
     socket.on('error', function (reason) {　
@@ -295,7 +295,9 @@ var getSeries = function (lists, type) {
         name: type,
         type: 'scatter',
         data: lists,
-        lineWidth: 1,
+        marker: {
+            radius: 1
+        }
     }, {
         data: [
             [90, 45],
@@ -413,8 +415,8 @@ function makeChartTurn(target, lists, type) {
     };
     $('#' + target).highcharts({
         chart: {
-            plotAreaWidth: 400,
-            plotAreaHeight: 400
+            plotAreaWidth: 600,
+            plotAreaHeight: 600
         },
         rangeSelector: {
             selected: 1,
@@ -476,6 +478,14 @@ function applySensorData(d) {
     $("#rs1").html(Math.round(d.RS1));
     $("#lf1").html(Math.round(d.LF1));
     $("#rf1").html(Math.round(d.RF1));
+
+    $("#ls2_2").html(Math.round(d.LS2_2));
+    $("#ls1_2").html(Math.round(d.LS1_2));
+    $("#rs2_2").html(Math.round(d.RS2_2));
+    $("#rs1_2").html(Math.round(d.RS1_2));
+    $("#lf1_2").html(Math.round(d.LF1_2));
+    $("#rf1_2").html(Math.round(d.RF1_2));
+
     $("#gyro").html(d.gyro);
     $("#battery").html(d.battery + "V");
 }

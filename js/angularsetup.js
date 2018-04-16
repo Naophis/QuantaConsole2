@@ -7,6 +7,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         $scope.ffparamList = res.ff.list;
         $scope.fbparamList = res.fb.list;
         $scope.sensorparamList = res.sensor.list;
+        $scope.walloffparamlist = res.walloff.list;
         // $scope.ffparamList = res.ff.list;
         let tmpLength = res.ff.list.length;
         $scope.ffparamList.push({
@@ -21,9 +22,10 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
             isNew: true,
             id: res.sensor.index + 4 * res.sensor.list.length
         });
-        setAllFFDataScript();
-        setAllFBDataScript();
-        setAllSensorDataScript();
+        $scope.walloffparamlist.push({
+            isNew: true,
+            id: res.walloff.index + 4 * res.walloff.list.length
+        });
         $scope.$apply();
     });
     $scope.load = function (id) {
@@ -63,6 +65,11 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                 return prm.id === param.id;
             });
         }
+        if (type === "walloff") {
+            map = $scope.walloffparamlist.filter(function (prm) {
+                return prm.id === param.id;
+            });
+        }
 
         if (param.isNew) {
             if ($.isNumeric(param.value) && !$.isNumeric(param.name &&
@@ -92,6 +99,12 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                     $scope.sensorparamList.push({
                         isNew: true,
                         id: $scope.recieveData.sensor.index + 4 * $scope.recieveData.sensor.list.length
+                    });
+                }
+                if (type === "walloff") {
+                    $scope.walloffparamlist.push({
+                        isNew: true,
+                        id: $scope.recieveData.walloff.index + 4 * $scope.recieveData.walloff.list.length
                     });
                 }
             }
@@ -177,6 +190,17 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         }
         copy(str);
     }
+
+    $scope.getWallOffScript = function () {
+        var str = "";
+        for (var i of $scope.walloffparamlist) {
+            if (i.name !== undefined && i.id !== undefined) {
+                str += `${i.name}=*(float *)${i.id};myprintf("${i.name}\t%f\t%d\\r\\n",${i.name},${i.id});\r\n`
+            }
+        }
+        copy(str);
+    }
+
 
 
     function copy(str) {

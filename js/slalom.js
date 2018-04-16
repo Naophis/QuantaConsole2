@@ -8,7 +8,6 @@ var Slalom = (function () {
             makeChartTurn("slalom_g", data.list, type);
         });
         $(".turn_kinds").on("click", function (e) {
-            console.log(e.target.value);
             type = e.target.value;
             if (type == "Normal") {
                 $("#radius").val(50);

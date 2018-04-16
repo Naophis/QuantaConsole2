@@ -65,11 +65,21 @@
 				<div id="rf1"></div>
 				<div id="gyro"></div>
 				<div id="battery"></div>
+
+				<img id="target2" src="img/exia.png">
+				<div id="ls2_2"></div>
+				<div id="rs2_2"></div>
+				<div id="ls1_2"></div>
+				<div id="rs1_2"></div>
+				<div id="lf1_2"></div>
+				<div id="rf1_2"></div>
 				<div class="btnlist">
 					<button ng-click="load()" class="btn-success">
 						LOAD
 					</button>
 				</div>
+
+
 				<div class="bs-component" id="tab1">
 					<ul class="nav nav-tabs">
 						<li class="active">
@@ -82,7 +92,7 @@
 							<a href="#flash_sensor" data-toggle="tab">Sensor</a>
 						</li>
 						<li>
-							<a href="#flash_testmotion" data-toggle="tab">Search</a>
+							<a href="#wall_off" data-toggle="tab">WallOff</a>
 						</li>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -217,12 +227,45 @@
 								COPY
 							</button>
 						</div>
-						<div class="tab-pane fade" id="flash_testmotion">
+						<div class="tab-pane fade" id="wall_off">
+							<div class="paramlist1">
+								<div style="text-align:left;padding-left:60px;">BlockName = {{recieveData.walloff.name}}</div>
+								<div style="text-align:left;padding-left:60px;">StartAddress = {{recieveData.walloff.index}}</div>
+								<ul>
+									<li ng-repeat="param in walloffparamlist" class="paramlist">
+										<div class="index">
+											{{$index}}
+										</div>
+										<div class="paramid">
+											<div ng-if="!param.isNew">
+												{{param.id}}
+											</div>
+											<div ng-if="param.isNew">
+												<input type="text" class="form-control" class="paramid2" ng-model="param.id">
+											</div>
+										</div>
+										<div class="name">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.name">
+										</div>
+										<div class="value">
+											<input type="text" class="form-control" style="width:inherit;" ng-model="param.value">
+										</div>
+										<div class="update">
+											<a ng-click="update('walloff',param)" class="btn btn-success">update</a>
+										</div>
+										<div class="descript">
+											<input type="text" class="form-control" style="width:300px;" ng-model="param.descript" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<button ng-click="getWallOffScript()" class="btn-success copy">
+								COPY
+							</button>
 						</div>
 					</div>
 					<textarea id="hoge"></textarea>
-					<div id="consolebtn">
-					</div>
+					<div id="consolebtn"> </div>
 				</div>
 			</div>
 		</div>
