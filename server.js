@@ -7,7 +7,13 @@ let SerialPort = require('serialport');
 const Readline = require('parser-readline');
 let comport = "";
 SerialPort.list(function (err, port) {
-    comport = port[0].comName;
+    for (let i in port) {
+        const p = port[i];
+        if (p.comName.match(/usbserial/) || p.comName.match(/COM/)) {
+            comport = p.comName;
+            break;
+        }
+    }
     ready();
 })
 
@@ -43,7 +49,7 @@ let ready = function () {
             if (globalScoket) {
                 globalScoket.emit('message', {
                     message: data
-                }, function (res) {});
+                }, function (res) { });
             }
         });
 
@@ -51,7 +57,7 @@ let ready = function () {
             if (data.velocity > 0) {
                 var sla = new Slalom(data);
                 var result = sla.exe();
-                globalScoket.emit('slalom', result, function (res) {});
+                globalScoket.emit('slalom', result, function (res) { });
             }
         });
         socket.on("sci", function (data) {
@@ -79,7 +85,7 @@ let ready = function () {
                                 head = false;
                                 writeFile("output.json", JSON.stringify(saveData, null, '\t'));
                                 console.log(`{${res.id}:${res.value}}`);
-                                port.write(`{${res.id}:${res.value}}`, function () {});
+                                port.write(`{${res.id}:${res.value}}`, function () { });
                             }
                         }
                         if (head) {
@@ -99,7 +105,7 @@ let ready = function () {
             if (data === null) {
                 readFile("output.json", function (data) {
                     try {
-                        socket.emit('list', JSON.parse(data), function (res) {});
+                        socket.emit('list', JSON.parse(data), function (res) { });
                     } catch (e) {
                         console.log(e);
                     }
