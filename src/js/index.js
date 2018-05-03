@@ -1,5 +1,5 @@
 var time = 0;
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('http://localhost:3000');
 // var socket = io.connect('http://naoto.local:8080');
 
 // var socket = io.connect('http://nodemouse.local:8080');
