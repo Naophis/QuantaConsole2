@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exia Console</title>
+	<link rel="shortcut icon" type="image/png" href="assets/img/brand-u.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/example.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="alter/css/index.css" type="text/css"></link>
+	<link rel="stylesheet" href="alter/css/handsontable.full.min.css" type="text/css"></link>
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://nkmr6194.github.io/Umi/" class="navbar-brand">Exia Console</a>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="javascript:changeDisplay('sensor');">Sensor </a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('map');">Map</a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('walls_g');">SensorGraph</a>
+						</li>
+						<li>
+							<a href="alter.html">AlterMode</a>
+						</li>
+						<li>
+							<a href="javascript:toggleConnection();" id="connection" class="disconnect">切断中</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div id="exia" ng-controller="HelloWorldController">
+			<div class="bs-component" id="tab1">
+				<button ng-click="load()" class="btn-success">
+					LOAD
+				</button>
+				<button ng-click="copy()" class="btn-success">
+					COPY
+				</button>
+			</div>
+			<div id="grid"> </div>
+		</div>
+		<!-- <script src="js/bootstrap.min.js "></script> -->
+		<div id="fb-root "></div>
+
+		<textarea id="hoge"></textarea>
+		<script type="text/javascript " src="https://b.st-hatena.com/js/bookmark_button.js " charset="utf-8 " async="async "></script>
+
+		<script src="js/socket.io.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="alter/js/handsontable.full.min.js"></script>
+
+		<script src="alter/js/index.js"></script>
+		<script src="alter/js/convert.js"></script>
+		<script src="alter/js/angularsetup.js"></script>
+</body>
+
+</html>

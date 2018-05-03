@@ -34,7 +34,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
     }
     $scope.connect = function (id) {
         let target = $.isNumeric(id) ? id : null;
-        socket.emit("load", id);
+        socket.emit("load", "output.json");
     }
     $scope.disconnect = function (id) {
         let target = $.isNumeric(id) ? id : null;
@@ -81,6 +81,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                     name: param.name,
                     value: param.value,
                     descript: param.descript,
+                    target: "output.json"
                 });
                 param.isNew = false;
                 if (type === "ff") {
@@ -118,6 +119,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                     name: map[0].name,
                     value: map[0].value,
                     descript: map[0].descript,
+                    target: "output.json"
                 });
             }
         }
