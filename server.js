@@ -11,14 +11,8 @@ SerialPort.list(function (err, port) {
     ready();
 })
 
-
-
 app.get(`/*`, (req, res) => {
-    let file = req.url;
-    if (file === "/") {
-        file = "/index.html";
-    }
-    res.sendFile(__dirname + '/src' + file);
+    res.sendFile(`${__dirname}/src${req.url}`);
 });
 let globalScoket;
 let port;
@@ -27,9 +21,6 @@ let parser;
 let ready = function () {
     io.on('connection', (socket) => {
         globalScoket = socket;
-        socket.on('chat message', (msg) => {
-            io.emit('chat message', msg);
-        });
         port = new SerialPort(comport, {
             baudRate: 230400
         }, function (e) {
@@ -48,7 +39,7 @@ let ready = function () {
             });
         });
         parser.on('data', function (data) {
-            console.log(data);
+            // console.log(data);
             if (globalScoket) {
                 globalScoket.emit('message', {
                     message: data
