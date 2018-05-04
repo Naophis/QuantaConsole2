@@ -29,11 +29,9 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         $scope.$apply();
     });
     $scope.load = function (id) {
-        let target = $.isNumeric(id) ? id : null;
-        socket.emit("load", id);
+        socket.emit("load", "output.json");
     }
     $scope.connect = function (id) {
-        let target = $.isNumeric(id) ? id : null;
         socket.emit("load", "output.json");
     }
     $scope.disconnect = function (id) {

@@ -81,7 +81,6 @@ let ready = function () {
         });
 
         socket.on("load", function (target) {
-            console.log("load", target);
             if (target) {
                 Tune.load(target, socket);
             }

@@ -67,13 +67,17 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
 
     $scope.copy = function () {
         let colLength = table.getDataAtCol(0).length;
-        let str = "";
+        let str = `#ifndef CONFIG_PARAMUARTIMPORTER_H_
+#define CONFIG_PARAMUARTIMPORTER_H_
+`;
         for (var i = 0; i < colLength; i++) {
             let row = table.getDataAtRow(i);
             const rowLength = row.length;
             var index = parseInt(row[13]);
             str += createStr(row, index);
         }
+        str += `
+#endif`;
         // console.log(str);
         clipcopy(str);
     }
@@ -159,45 +163,49 @@ let getMergeCellList = function () {
 function createStr(rows, index) {
     let str = "";
     str = `void set${rows[1]}Param${rows[0]}(){`;
-    str +=`float ang,radius,front1,back1,front2,back2,time,n,frontleft1,frontleft2,firstfront;`;
+    str+=`myprintf("----turn=${rows[1]}   v=${rows[0]}-----------\\r\\n");`
+    str += `float ang,radius,front1,back1,front2,back2,time,n,v,frontleft1,frontleft2,firstfront;`;
 
-    str += `ang=*(float *)${index};myprintf("ang\t%f\t%d\\r\\n",${rows[0]},${index});\r\n`;
+    str += `ang=*(float *)${index};myprintf("ang\t%f\t%d\\r\\n",ang,${index});\r\n`;
     index += 4;
 
-    str += `radius=*(float *)${index};myprintf("radius\t%f\t%d\\r\\n",${rows[2]},${index});\r\n`;
+    str += `radius=*(float *)${index};myprintf("radius\t%f\t%d\\r\\n",radius,${index});\r\n`;
     index += 4;
 
-    str += `front1=*(float *)${index};myprintf("front1\t%f\t%d\\r\\n",${rows[3]},${index});\r\n`;
+    str += `front1=*(float *)${index};myprintf("front1\t%f\t%d\\r\\n",front1,${index});\r\n`;
     index += 4;
 
-    str += `back1=*(float *)${index};myprintf("back1\t%f\t%d\\r\\n",${rows[4]},${index});\r\n`;
+    str += `back1=*(float *)${index};myprintf("back1\t%f\t%d\\r\\n",back1,${index});\r\n`;
     index += 4;
 
-    str += `front2=*(float *)${index};myprintf("front2\t%f\t%d\\r\\n",${rows[5]},${index});\r\n`;
+    str += `front2=*(float *)${index};myprintf("front2\t%f\t%d\\r\\n",front2,${index});\r\n`;
     index += 4;
 
-    str += `back2=*(float *)${index};myprintf("back2\t%f\t%d\\r\\n",${rows[6]},${index});\r\n`;
+    str += `back2=*(float *)${index};myprintf("back2\t%f\t%d\\r\\n",back2,${index});\r\n`;
     index += 4;
 
-    str += `time=*(float *)${index};myprintf("time\t%f\t%d\\r\\n",${rows[7]},${index});\r\n`;
+    str += `time=*(float *)${index};myprintf("time\t%f\t%d\\r\\n",time,${index});\r\n`;
     index += 4;
 
-    str += `n=*(float *)${index};myprintf("n\t%f\t%d\\r\\n",${rows[8]},${index});\r\n`;
+    str += `n=*(float *)${index};myprintf("n\t%f\t%d\\r\\n",n,${index});\r\n`;
+    index += 4;
+    
+    str += `v=*(float *)${index};myprintf("v\t%f\t%d\\r\\n",v,${index});\r\n`;
     index += 4;
 
-    str += `frontleft1=*(float *)${index};myprintf("frontleft1\t%f\t%d\\r\\n",${rows[9]},${index});\r\n`;
+    str += `frontleft1=*(float *)${index};myprintf("frontleft1\t%f\t%d\\r\\n",frontleft1,${index});\r\n`;
     index += 4;
 
-    str += `frontleft2=*(float *)${index};myprintf("frontleft2\t%f\t%d\\r\\n",${rows[10]},${index});\r\n`;
+    str += `frontleft2=*(float *)${index};myprintf("frontleft2\t%f\t%d\\r\\n",frontleft2,${index});\r\n`;
     index += 4;
 
-    str += `firstfront=*(float *)${index};myprintf("firstfront\t%f\t%d\\r\\n",${rows[11]},${index});\r\n`;
+    str += `firstfront=*(float *)${index};myprintf("firstfront\t%f\t%d\\r\\n",firstfront,${index});\r\n`;
 
-    str +=`setPrms(${rows[1]},  ang, radius,  front1,
-		 back1,  front2,  back2,  time,  n,  ${rows[0]}) ;
+    str += `setPrms(${rows[1]},  ang, radius,  front1,
+		 back1,  front2,  back2,  time,  n, v) ;
 	setPrms3(${rows[1]}, frontleft1, frontleft2, firstfront);`
 
-    str += `}
+    str += `myprintf("----------------------------------\\r\\n");}
     `;
 
     return str;

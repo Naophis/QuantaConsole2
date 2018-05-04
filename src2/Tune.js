@@ -80,11 +80,11 @@ class Tune {
             let index = parseInt(param.index);
             delete param.index;
             const keys = Object.keys(param);
-
+            
             for (let i = 0; i < keys.length; i++) {
-                await sleep(150)
+                await sleep(50);
                 console.log(index, param[keys[i]]);
-                // port.write(`{${index}:${param[keys[i]]}}`, function () {});
+                port.write(`{${index}:${param[keys[i]]}}`, function () {});
                 index += 4;
             }
         }
