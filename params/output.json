@@ -6,13 +6,13 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.001056",
+				"value": "0.001057",
 				"descript": "ゲイン(ジャイロ)右回転"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.0010556",
+				"value": "0.001056",
 				"descript": "ゲイン(ジャイロ)左回転"
 			},
 			{
@@ -61,7 +61,7 @@
 				"id": 1049380,
 				"name": "Sen.Ki",
 				"value": "0.000125",
-				"descript": "通常時直進ゲイン I0.01"
+				"descript": "通常時直進ゲイン I0.000125"
 			},
 			{
 				"id": 1049384,
@@ -108,13 +108,13 @@
 			{
 				"id": 1049600,
 				"name": "RS_SEN45.ref",
-				"value": "790",
+				"value": "820",
 				"descript": "直進時中央右センサー"
 			},
 			{
 				"id": 1049604,
 				"name": "LS_SEN45.ref",
-				"value": "668",
+				"value": "710",
 				"descript": "直進時中央左センサー"
 			},
 			{
@@ -272,6 +272,12 @@
 				"id": 1049720,
 				"name": "search_wall_off_r",
 				"value": "1500"
+			},
+			{
+				"id": 1049724,
+				"name": "FRONT_CTRL_1",
+				"value": "1250",
+				"descript": "1450"
 			}
 		]
 	},
@@ -355,6 +361,16 @@
 				"id": 1049912,
 				"name": "DIA_FRONT_WALL_ORDER",
 				"value": "360"
+			},
+			{
+				"id": 1049916,
+				"name": "searchWallOffDistR",
+				"value": "22"
+			},
+			{
+				"id": 1049920,
+				"name": "searchWallOffDistL",
+				"value": "20.75"
 			}
 		]
 	},
@@ -365,7 +381,7 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.975",
+				"value": "23.90",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
@@ -427,6 +443,132 @@
 				"name": "friction2",
 				"value": "0.001925",
 				"descript": "摩擦係数（平進）"
+			},
+			{
+				"id": 1049260,
+				"name": "testCmd",
+				"value": "1",
+				"descript": "制御コマンド"
+			},
+			{
+				"id": 1049264,
+				"name": "testSlalom3_v",
+				"value": "1500",
+				"descript": "テスト用スラローム速度"
+			},
+			{
+				"id": 1049268,
+				"name": "test_acc",
+				"value": "20000",
+				"descript": "テスト用加速度"
+			},
+			{
+				"id": 1049272,
+				"name": "test_max_v",
+				"value": "5000",
+				"descript": "テスト用最高速度"
+			},
+			{
+				"id": 1049276,
+				"name": "test_dia",
+				"value": "0",
+				"descript": "強制斜めモード"
+			},
+			{
+				"id": 1049280,
+				"name": "test_sla_scenario",
+				"value": "3",
+				"descript": "スラロームのシナリオパターン"
+			},
+			{
+				"id": 1049284,
+				"name": "test_sla_scenario2",
+				"value": "0",
+				"descript": "スラロームのシナリオパターン2"
+			},
+			{
+				"id": 1049288,
+				"name": "test_sla_return_flg",
+				"value": "0",
+				"descript": "スラローム往復フラグ"
+			},
+			{
+				"id": 1049292,
+				"name": "test_sla_return_scenario",
+				"value": "3",
+				"descript": "スラローム往復時シナリオ"
+			},
+			{
+				"id": 1049296,
+				"name": "test_distance",
+				"value": "810",
+				"descript": "テスト直進"
+			},
+			{
+				"id": 1049300,
+				"name": "test_distance_dia",
+				"value": "763.6753236",
+				"descript": "テスト直進（斜め）"
+			},
+			{
+				"id": 1049304,
+				"name": "test_turn_angle",
+				"value": "1800",
+				"descript": "テスト超信地回転角"
+			},
+			{
+				"id": 1049308,
+				"name": "test_turn_times",
+				"value": "1",
+				"descript": "テスト超信地回転回数"
+			},
+			{
+				"id": 1049312,
+				"name": "test_turn_acc",
+				"value": "15",
+				"descript": "テスト超信地角加速度"
+			},
+			{
+				"id": 1049316,
+				"name": "test_turn_w",
+				"value": "20",
+				"descript": "テスト超信地角速度"
+			},
+			{
+				"id": 1049320,
+				"name": "searchTurn",
+				"value": "1000",
+				"descript": "探索速度"
+			},
+			{
+				"id": 1049324,
+				"name": "searchAccel",
+				"value": "5000",
+				"descript": "探索加速度"
+			},
+			{
+				"id": 1049328,
+				"name": "searchDeAcc",
+				"value": "12000",
+				"descript": "探索減速度"
+			},
+			{
+				"id": 1049332,
+				"name": "knownVelocity",
+				"value": "1500",
+				"descript": "既知区間速度"
+			},
+			{
+				"id": 1049336,
+				"name": "goalX",
+				"value": "1",
+				"descript": "ゴール座標X"
+			},
+			{
+				"id": 1049340,
+				"name": "goalY",
+				"value": "0",
+				"descript": "ゴール座標Y"
 			}
 		]
 	}

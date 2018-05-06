@@ -20,7 +20,7 @@
 
 #exia {
     position: absolute;
-    top: 50px;
+    top: 10px;
 }
 
 #map_data {
@@ -35,34 +35,34 @@
 
 #exia #ls2 {
     position: inherit;
-    top: 20px;
-    left: 80px;
+    top: 95px;
+    left: 30px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rs2 {
     position: inherit;
-    top: 20px;
-    right: 80px;
+    top: 95px;
+    right: 30px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #ls1 {
     position: inherit;
-    top: 65px;
-    left: 70px;
+    top: 50px;
+    left: 60px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rs1 {
     position: inherit;
-    top: 65px;
-    right: 70px;
+    top: 50px;
+    right: 60px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #lf1 {
@@ -70,33 +70,33 @@
     top: 120px;
     left: 35px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rf1 {
     position: inherit;
-    top: 120px;
-    right: 35px;
+    top: 10px;
+    right: 140px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #gyro {
     position: inherit;
-    top: 225px;
+    top: 200px;
     left: 150px;
     text-align: center;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #battery {
     position: inherit;
-    top: 285px;
+    top: 125px;
     left: 150px;
     text-align: center;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #console {
@@ -108,14 +108,12 @@
     background-color: transparent;
 }
 
-
-
 #exia #ls2_2 {
     position: inherit;
     top: 350px;
     left: 100px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rs2_2 {
@@ -123,7 +121,7 @@
     top: 350px;
     right: 100px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #ls1_2 {
@@ -131,7 +129,7 @@
     top: 400px;
     left: 70px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rs1_2 {
@@ -139,7 +137,7 @@
     top: 400px;
     right: 70px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #lf1_2 {
@@ -147,7 +145,7 @@
     top: 450px;
     left: 35px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #exia #rf1_2 {
@@ -155,9 +153,8 @@
     top: 450px;
     right: 35px;
     color: white;
-    font-size:24px;
+    font-size: 24px;
 }
-
 
 #map_result {
     /*position: absolute;*/
@@ -199,10 +196,6 @@ body {
     background-color: #add8ff;
 }
 
-// .btn-success{
-//     color:#ddd;
-// }
-
 #container {
     width: 100%;
     height: 100%;
@@ -210,7 +203,7 @@ body {
 }
 
 .jumbotron.special {
-    padding: 0 0 40px 40px;
+    padding: 0 0 20px 20px;
     margin: auto auto;
 }
 
@@ -230,10 +223,10 @@ body {
     outline: none;
 }
 
-#target2{
+#target2 {
     position: absolute;
     padding-top: 10px;
-    left:0px;
+    left: 0px;
 }
 
 .btn2:active {
@@ -373,108 +366,137 @@ body {
     fill: #000000;
 }
 
-#consolebtn{
-    position:absolute;
-    top:100px;
-    left:500px;
+#consolebtn {
+    position: absolute;
+    top: 100px;
+    left: 500px;
 }
 
-.btn-success{
-    width:100px;
-    height:40px;
-    float:left;
-}
-.btnlist{
-    width:300px;
-    position:absolute;
-    top:0px;
-    left:325px;
-}
-.paramlist1{
-    position:absolute;
-    top:50px;
-    width:50px;
-    left:-55px;
+.btn-success {
+    width: 100px;
+    height: 40px;
+    float: left;
 }
 
-.paramlist1{
-    width:350px;
+.btnlist {
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 325px;
 }
 
-
-.paramlist1>ul{
-    padding-top:25px;
+.paramlist1 {
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    left: -55px;
 }
+
+.paramlist1 {
+    width: 350px;
+}
+
+.paramlist1>ul {
+    padding-top: 25px;
+}
+
 ul {
-  list-style:none;
-}
-.alldata{
-    position:relative;
-    left:350px;
-    width:500px;
-    height:50px;
-    max-height:50px;
-    max-width:500px;
-    min-height:50px;
-    min-width:500px;
+    list-style: none;
 }
 
-#tab1{
-    position:absolute;
-    top:50px;
-    left:325px;
-    width:600px;
+.alldata {
+    position: relative;
+    left: 350px;
+    width: 500px;
+    height: 50px;
+    max-height: 50px;
+    max-width: 500px;
+    min-height: 50px;
+    min-width: 500px;
 }
 
-.index{
-    width:50px;
-    float:left;
-}
-.paramid{
-    width:100px;
-    float:left;
-}
-.paramid2{
-    width:inherit; 
+#tab1 {
+    position: absolute;
+    top: 50px;
+    left: 325px;
+    width: 600px;
 }
 
-.name{
-    width:150px;
-    float:left;
-}
-.value{
-    width:150px;
-    float:left;
-}
-.update{
-    width:100px;
-    float:left;
-}
-.update>button{
-    width:inherit;
-}
-.descript{
-    width:300px;
-    float:left;
+.index {
+    width: 50px;
+    float: left;
 }
 
-.descript>input{
-    width:inherit;
-}
-.paramlist{
-    width:850px;
-    height:40px;
-}
-.paramlist>div>input{
-    height:40px;
-}
-#hoge{
-    position:absolute;
-    top:-200px;
-    left:-200px;
+.paramid {
+    width: 100px;
+    float: left;
 }
 
-.copy{
-    position:absolute;
-    left:300px;
+.paramid2 {
+    width: inherit;
+}
+
+.name {
+    width: 150px;
+    float: left;
+}
+
+.value {
+    width: 150px;
+    float: left;
+}
+
+.update {
+    width: 100px;
+    float: left;
+}
+
+.update>button {
+    width: inherit;
+}
+
+.descript {
+    width: 300px;
+    float: left;
+}
+
+.descript>input {
+    width: inherit;
+}
+
+.paramlist {
+    width: 850px;
+    height: 40px;
+}
+
+.paramlist>div>input {
+    height: 40px;
+}
+
+#hoge {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+
+.copy {
+    position: absolute;
+    left: 300px;
+}
+
+#cmdlist {
+    text-align: left;
+    margin-top: 20px;
+    background-color: aliceblue
+}
+
+#cmdlist ul {
+    margin-left: -25px;
+}
+#cmd{
+    text-align: left;
+    background-color: aliceblue
+}
+#cmd div{
+    margin-left: -25px;
 }

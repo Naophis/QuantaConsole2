@@ -1,0 +1,69 @@
+#title {
+    position: absolute;
+    top: 0px;
+    width: 400px;
+}
+
+#connection {
+    position: inherit;
+    top: 0px;
+    right: 0px;
+}
+
+.connect {
+    color: #18bc9c;
+}
+
+.disconnect {
+    color: red;
+}
+
+body {
+    background-color: #add8ff;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.jumbotron.special {
+    padding: 0 0 40px 40px;
+    margin: auto auto;
+}
+
+.btn-success {
+    width: 100px;
+    height: 40px;
+    /* float:left; */
+}
+
+ul {
+    list-style: none;
+}
+
+#hoge {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+
+.copy {
+    position: absolute;
+    left: 300px;
+}
+
+.updatebtn {
+    width: 100%;
+}
+
+#exia {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.item1 {
+    align-self: stretch;
+}

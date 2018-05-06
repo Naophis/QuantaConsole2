@@ -22,15 +22,15 @@
 		"Normal": {
 			"ang": "90",
 			"radius": "50",
-			"front1": "21",
-			"back1": "40",
+			"front1": "18.5",
+			"back1": "45",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.051453590393066406",
 			"n": "4",
 			"v": 1000,
-			"frontleft1": "9",
-			"frontleft2": "52",
+			"frontleft1": "17",
+			"frontleft2": "42.25",
 			"firstFront": "0",
 			"index": "1050176"
 		},
@@ -145,7 +145,7 @@
 		"Dia45": {
 			"ang": "45",
 			"radius": "125",
-			"front1": "13",
+			"front1": "10",
 			"back1": "40",
 			"front2": "57",
 			"back2": "10",

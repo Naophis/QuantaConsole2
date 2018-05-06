@@ -1,0 +1,28 @@
+{
+	"testCmd": {
+		"index": 111,
+		"value": 123
+	},
+	"testrun": {
+		"velocity": 500,
+		"index": 1
+	},
+	"testslalom": {
+		"velocity": 1000,
+		"Dia90": {
+			"ang": "90",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 2100,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "0"
+		}
+	}
+}

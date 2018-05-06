@@ -2,13 +2,14 @@ var app = angular.module('myApp', []);
 app.controller('HelloWorldController', ['$scope', function ($scope) {
     $scope.paramList = [];
     $scope.flashName = "";
+    $scope.story = "現在のストーリー";
+    $scope.cmdCode = 0;
     socket.on("list", function (res) {
         $scope.recieveData = res;
         $scope.ffparamList = res.ff.list;
         $scope.fbparamList = res.fb.list;
         $scope.sensorparamList = res.sensor.list;
         $scope.walloffparamlist = res.walloff.list;
-        // $scope.ffparamList = res.ff.list;
         let tmpLength = res.ff.list.length;
         $scope.ffparamList.push({
             isNew: true,
@@ -27,7 +28,74 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
             id: res.walloff.index + 4 * res.walloff.list.length
         });
         $scope.$apply();
+        $scope.cmd = {};
+        showStory();
+        $scope.$apply();
     });
+
+    function showStory() {
+        var cmd = parseInt($scope.ffparamList[11].value);
+        var slalom_v = parseInt($scope.ffparamList[12].value);
+        var acc = parseInt($scope.ffparamList[13].value);
+        var max_velocity = parseInt($scope.ffparamList[14].value);
+        var isDia = parseInt($scope.ffparamList[15].value);
+        var sla_scenario = parseInt($scope.ffparamList[16].value);
+        var sla_scenario2 = parseInt($scope.ffparamList[17].value);
+        var sla_return_flg = parseInt($scope.ffparamList[18].value);
+        var sla_return_scenario2 = parseInt($scope.ffparamList[19].value);
+
+        var dist = parseInt($scope.ffparamList[20].value);
+        var distDia = parseInt($scope.ffparamList[21].value);
+        var turnAngle = parseInt($scope.ffparamList[22].value);
+        var turnTimes = parseInt($scope.ffparamList[23].value);
+        var turn_acc = parseInt($scope.ffparamList[24].value);
+        var turn_w = parseInt($scope.ffparamList[25].value);
+
+        $scope.cmdCode = cmd;
+        $scope.cmd = {
+            v: slalom_v,
+            acc: acc,
+            maxV: max_velocity,
+            isDia: isDia == 1,
+            scenario: detectSlalomPattern(sla_scenario),
+            startTurn: sla_scenario2 == 1,
+            returnFlg: sla_return_flg == 1,
+            returnTurn: detectSlalomPattern(sla_return_scenario2),
+            dist: dist,
+            distDia: distDia,
+            turnAngle: turnAngle,
+            turnTimes: turnTimes,
+            turn_acc: turn_acc,
+            turn_w: turn_w,
+            searchVelocity: parseInt($scope.ffparamList[26].value),
+            searchAccel: parseInt($scope.ffparamList[27].value),
+            searchDeAcc: parseInt($scope.ffparamList[28].value),
+            knownVelocity: parseInt($scope.ffparamList[29].value),
+            gx: parseInt($scope.ffparamList[30].value),
+            gy: parseInt($scope.ffparamList[31].value)
+        }
+    }
+
+    function detectSlalomPattern(sla) {
+        if (sla === 0) {
+            return "Normal";
+        }
+        if (sla === 1) {
+            return "Large";
+        }
+        if (sla === 2) {
+            return "Orval";
+        }
+        if (sla === 3) {
+            return "Dia45";
+        }
+        if (sla === 4) {
+            return "Dia135";
+        }
+        if (sla === 5) {
+            return "Dia90";
+        }
+    }
     $scope.load = function (id) {
         socket.emit("load", "output.json");
     }
@@ -121,6 +189,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                 });
             }
         }
+        showStory()
     }
     $scope.load();
     $("input").focus(function () {

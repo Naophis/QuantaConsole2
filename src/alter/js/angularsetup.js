@@ -78,7 +78,6 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         }
         str += `
 #endif`;
-        // console.log(str);
         clipcopy(str);
     }
 

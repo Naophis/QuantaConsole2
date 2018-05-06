@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exia Console</title>
+	<link rel="shortcut icon" type="image/png" href="assets/img/brand-u.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/example.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="test/css/index.css" type="text/css"></link>
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://nkmr6194.github.io/Umi/" class="navbar-brand">Exia Console</a>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="javascript:changeDisplay('sensor');">Sensor </a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('map');">Map</a>
+						</li>
+						<li>
+							<a href="javascript:changeDisplay('walls_g');">SensorGraph</a>
+						</li>
+						<li>
+							<a href="/">NormalMode</a>
+						</li>
+						<li>
+							<a href="alter.html">AlterMode</a>
+						</li>
+						<li>
+							<a href="javascript:toggleConnection();" id="connection" class="disconnect">切断中</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div id="exia" ng-controller="HelloWorldController">
+			<div class="item1">
+				<div class="bs-component" id="tab1">
+					<button ng-click="load()" class="btn-success">
+						LOAD
+					</button>
+					<button ng-click="copy()" class="btn-success">
+						COPY
+					</button>
+				</div>
+
+				<ul>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="0"> 本番
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="1"> スラロームテスト
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="2"> 直線テスト・タイヤ径チューニング
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="3"> ジャイロゲインチューニング
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="4">前壁制御チューニング
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="optionsRadios" ng-model="cmdMode" value="5">壁切れチューニング
+						</label>
+					</li>
+				</ul>
+				<button ng-click="changeTestMode()" class="btn btn-info">
+					Update Cmd Mode
+				</button>
+			</div>
+			<div class="item1">
+				<div ng-if="cmdMode==1">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>カラムのタイトル</th>
+								<th>カラムのタイトル</th>
+								<th>カラムのタイトル</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="info">
+								<td>3</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+							</tr>
+							<tr class="success">
+								<td>4</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+							</tr>
+							<tr class="danger">
+								<td>5</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+							</tr>
+							<tr class="warning">
+								<td>6</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+							</tr>
+							<tr class="active">
+								<td>7</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+								<td>カラムの内容</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+		<div id="fb-root "></div>
+
+		<textarea id="hoge"></textarea>
+		<script type="text/javascript " src="https://b.st-hatena.com/js/bookmark_button.js " charset="utf-8 " async="async "></script>
+
+		<script src="js/socket.io.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/angular.min.js"></script>
+
+		<script src="test/js/index.js"></script>
+		<script src="test/js/convert.js"></script>
+		<script src="test/js/angularsetup.js"></script>
+</body>
+
+</html>
