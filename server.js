@@ -28,21 +28,24 @@ let parser;
 let ready = function () {
     io.on('connection', (socket) => {
         globalScoket = socket;
-        port = new SerialPort(comport, {
-            baudRate: 230400
-        }, function (e) {
-            if (e) {
-                console.log("comport access dinied");
-            } else {
-                console.log("connect");
-            }
-        });
-        parser = port.pipe(new Readline({
-            delimiter: '\r\n'
-        }))
+        if (!port) {
+            port = new SerialPort(comport, {
+                baudRate: 230400
+            }, function (e) {
+                if (e) {
+                    console.log("comport access dinied");
+                } else {
+                    console.log("connect");
+                }
+            });
+            parser = port.pipe(new Readline({
+                delimiter: '\r\n'
+            }));
+        }
         socket.on('disconnect', function () {
             port.close(function () {
                 log("closed");
+                port = undefined;
             });
         });
         parser.on('data', function (data) {

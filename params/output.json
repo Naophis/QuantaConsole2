@@ -60,7 +60,7 @@
 			{
 				"id": 1049380,
 				"name": "Sen.Ki",
-				"value": "0.000125",
+				"value": "0.000",
 				"descript": "通常時直進ゲイン I0.000125"
 			},
 			{
@@ -447,13 +447,13 @@
 			{
 				"id": 1049260,
 				"name": "testCmd",
-				"value": "1",
+				"value": "7",
 				"descript": "制御コマンド"
 			},
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "1500",
+				"value": "1700",
 				"descript": "テスト用スラローム速度"
 			},
 			{
@@ -484,18 +484,18 @@
 				"id": 1049284,
 				"name": "test_sla_scenario2",
 				"value": "0",
-				"descript": "スラロームのシナリオパターン2"
+				"descript": "開幕ターン"
 			},
 			{
 				"id": 1049288,
 				"name": "test_sla_return_flg",
-				"value": "0",
+				"value": "1",
 				"descript": "スラローム往復フラグ"
 			},
 			{
 				"id": 1049292,
 				"name": "test_sla_return_scenario",
-				"value": "3",
+				"value": "5",
 				"descript": "スラローム往復時シナリオ"
 			},
 			{

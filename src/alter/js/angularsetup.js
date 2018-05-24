@@ -139,9 +139,9 @@ let columns = [{
 ];
 
 const colHeaders = [
-    'velocity', 'type', 'ang', 'radius', "front1",
-    "back1", "front2", "back2", "time",
-    "n", "frontleft1", "frontleft2", "firstFront", "index", "update"
+    '速度', 'type', '角度', '半径', "前進（右）",
+    "後進（右）", "前進２（右）", "後進２（右）", "time",
+    "n", "前進（左）", "前進２（左）", "開幕ターン", "index", "update"
 ];
 
 let getMergeCellList = function () {
