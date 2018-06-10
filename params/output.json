@@ -36,19 +36,19 @@
 			{
 				"id": 1049364,
 				"name": "Gyro.Kp",
-				"value": "1.25",
+				"value": "1.75",
 				"descript": "角速度ゲイン P"
 			},
 			{
 				"id": 1049368,
 				"name": "Gyro.Ki",
-				"value": "0.01",
+				"value": "0.0125",
 				"descript": "角速度ゲイン I"
 			},
 			{
 				"id": 1049372,
 				"name": "Gyro.Kd",
-				"value": "10.5",
+				"value": "17.5",
 				"descript": "角速度ゲイン D"
 			},
 			{
@@ -447,7 +447,7 @@
 			{
 				"id": 1049260,
 				"name": "testCmd",
-				"value": "7",
+				"value": "0",
 				"descript": "制御コマンド"
 			},
 			{

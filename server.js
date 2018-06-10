@@ -43,10 +43,12 @@ let ready = function () {
             }));
         }
         socket.on('disconnect', function () {
-            port.close(function () {
-                log("closed");
-                port = undefined;
-            });
+            if (port) {
+                port.close(function () {
+                    log("closed");
+                    port = undefined;
+                });
+            }
         });
         parser.on('data', function (data) {
             // console.log(data);

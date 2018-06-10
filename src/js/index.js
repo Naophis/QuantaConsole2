@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     socket.on('message', function (data, fn) {
         // console.log(data);
-        console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data))
         try {
             var reg = new RegExp("{.*}", "g");
             if (displayMode == "map") {} else if (!data.message.match(reg)) {
@@ -59,12 +59,12 @@ $(document).ready(function () {
             } else if (displayMode == "map") {
                 readMap(d);
             } else if (displayMode == "walls_g") {
-                logs.RS1 = addSensor(logs.RS1, d.RS1);
-                logs.RS2 = addSensor(logs.RS2, d.RS2);
-                logs.LS1 = addSensor(logs.LS1, d.LS1);
-                logs.LS2 = addSensor(logs.LS2, d.LS2);
-                logs.RF1 = addSensor(logs.RF1, d.RF1);
-                logs.LF1 = addSensor(logs.LF1, d.LF1);
+                logs.RS1 = addSensor(logs.RS1, d.right);
+                logs.RS2 = addSensor(logs.RS2, d.right90);
+                logs.LS1 = addSensor(logs.LS1, d.left);
+                logs.LS2 = addSensor(logs.LS2, d.left90);
+                logs.RF1 = addSensor(logs.RF1, d.front);
+                // logs.LF1 = addSensor(logs.LF1, d.LF1);
                 // logs.gyro = addSensor(logs.gyro, d.gyro, 100);
                 sensor_list = [];
                 logs.gyro = addSensor(logs.gyro, d.gyro);
@@ -472,19 +472,11 @@ var Sensor = {
 };
 
 function applySensorData(d) {
-    $("#ls2").html(Math.round(d.LS2));
-    $("#ls1").html(Math.round(d.LS1));
-    $("#rs2").html(Math.round(d.RS2));
-    $("#rs1").html(Math.round(d.RS1));
-    $("#lf1").html(Math.round(d.LF1));
-    $("#rf1").html(Math.round(d.RF1));
-
-    $("#ls2_2").html(Math.round(d.LS2_2));
-    $("#ls1_2").html(Math.round(d.LS1_2));
-    $("#rs2_2").html(Math.round(d.RS2_2));
-    $("#rs1_2").html(Math.round(d.RS1_2));
-    $("#lf1_2").html(Math.round(d.LF1_2));
-    $("#rf1_2").html(Math.round(d.RF1_2));
+    $("#ls2").html(Math.round(d.left90));
+    $("#ls1").html(Math.round(d.left));
+    $("#rs2").html(Math.round(d.right90));
+    $("#rs1").html(Math.round(d.right));
+    $("#rf1").html(Math.round(d.front));
 
     $("#gyro").html(d.gyro);
     $("#battery").html(d.battery + "V");
