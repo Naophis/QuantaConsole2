@@ -54,19 +54,19 @@
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.035",
+				"value": "0.02",
 				"descript": "通常時直進ゲイン P0.025"
 			},
 			{
 				"id": 1049380,
 				"name": "Sen.Ki",
-				"value": "0.000",
+				"value": "0.00",
 				"descript": "通常時直進ゲイン I0.000125"
 			},
 			{
 				"id": 1049384,
 				"name": "Sen.Kd",
-				"value": "0.08",
+				"value": "0.02",
 				"descript": "通常時直進ゲイン D0.065"
 			},
 			{
@@ -98,6 +98,12 @@
 				"name": "FrontCtrl.Ki",
 				"value": "0",
 				"descript": "前壁制御ゲインI"
+			},
+			{
+				"id": 1049408,
+				"name": "autostart",
+				"value": "1",
+				"descript": "オートスタート"
 			}
 		]
 	},
@@ -114,7 +120,7 @@
 			{
 				"id": 1049604,
 				"name": "LS_SEN45.ref",
-				"value": "710",
+				"value": "670",
 				"descript": "直進時中央左センサー"
 			},
 			{
@@ -226,12 +232,12 @@
 			{
 				"id": 1049684,
 				"name": "L_WALL_EXIST2",
-				"value": "1600"
+				"value": "1200"
 			},
 			{
 				"id": 1049688,
 				"name": "R_WALL_EXIST2",
-				"value": "1800"
+				"value": "1200"
 			},
 			{
 				"id": 1049692,
@@ -276,7 +282,7 @@
 			{
 				"id": 1049724,
 				"name": "FRONT_CTRL_1",
-				"value": "1250",
+				"value": "1125",
 				"descript": "1450"
 			}
 		]
@@ -365,12 +371,12 @@
 			{
 				"id": 1049916,
 				"name": "searchWallOffDistR",
-				"value": "22"
+				"value": "16"
 			},
 			{
 				"id": 1049920,
 				"name": "searchWallOffDistL",
-				"value": "20.75"
+				"value": "16"
 			}
 		]
 	},
@@ -381,7 +387,7 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.90",
+				"value": "23.885",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
@@ -447,7 +453,7 @@
 			{
 				"id": 1049260,
 				"name": "testCmd",
-				"value": "0",
+				"value": "2",
 				"descript": "制御コマンド"
 			},
 			{
@@ -459,13 +465,13 @@
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "20000",
+				"value": "1200",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "5000",
+				"value": "500",
 				"descript": "テスト用最高速度"
 			},
 			{
@@ -489,7 +495,7 @@
 			{
 				"id": 1049288,
 				"name": "test_sla_return_flg",
-				"value": "1",
+				"value": "0",
 				"descript": "スラローム往復フラグ"
 			},
 			{
@@ -501,7 +507,7 @@
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "810",
+				"value": "900",
 				"descript": "テスト直進"
 			},
 			{
@@ -513,13 +519,13 @@
 			{
 				"id": 1049304,
 				"name": "test_turn_angle",
-				"value": "1800",
+				"value": "720",
 				"descript": "テスト超信地回転角"
 			},
 			{
 				"id": 1049308,
 				"name": "test_turn_times",
-				"value": "1",
+				"value": "0",
 				"descript": "テスト超信地回転回数"
 			},
 			{
@@ -549,13 +555,13 @@
 			{
 				"id": 1049328,
 				"name": "searchDeAcc",
-				"value": "12000",
+				"value": "4000",
 				"descript": "探索減速度"
 			},
 			{
 				"id": 1049332,
 				"name": "knownVelocity",
-				"value": "1500",
+				"value": "1000",
 				"descript": "既知区間速度"
 			},
 			{

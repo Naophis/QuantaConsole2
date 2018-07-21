@@ -14,8 +14,8 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                 let index = $(this).attr('index');
                 let row = table.getDataAtRow(index);
                 $scope.update(row);
-            })
-        }
+            });
+        };
         table = new Handsontable(grid, {
             data: data,
             colHeaders: colHeaders,
@@ -26,6 +26,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
             afterChange: function () {
                 setEvt();
             },
+            rowHeights: 28,
             mergeCells: getMergeCellList(30)
         });
 
@@ -139,9 +140,9 @@ let columns = [{
 ];
 
 const colHeaders = [
-    '速度', 'type', '角度', '半径', "前進（右）",
-    "後進（右）", "前進２（右）", "後進２（右）", "time",
-    "n", "前進（左）", "前進２（左）", "開幕ターン", "index", "update"
+    '速度', 'type', '角度', '半径', "前進(右)",
+    "後進(右)", "前進2(右)", "後進2(右)", "time",
+    "n", "前進(左)", "前進2(左)", "開幕ターン", "index", "update"
 ];
 
 let getMergeCellList = function () {
@@ -162,7 +163,7 @@ let getMergeCellList = function () {
 function createStr(rows, index) {
     let str = "";
     str = `void set${rows[1]}Param${rows[0]}(){`;
-    str+=`myprintf("----turn=${rows[1]}   v=${rows[0]}-----------\\r\\n");`
+    str += `myprintf("----turn=${rows[1]}   v=${rows[0]}-----------\\r\\n");`
     str += `float ang,radius,front1,back1,front2,back2,time,n,v,frontleft1,frontleft2,firstfront;`;
 
     str += `ang=*(float *)${index};myprintf("ang\t%f\t%d\\r\\n",ang,${index});\r\n`;
@@ -188,7 +189,7 @@ function createStr(rows, index) {
 
     str += `n=*(float *)${index};myprintf("n\t%f\t%d\\r\\n",n,${index});\r\n`;
     index += 4;
-    
+
     str += `v=*(float *)${index};myprintf("v\t%f\t%d\\r\\n",v,${index});\r\n`;
     index += 4;
 
