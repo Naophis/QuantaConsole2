@@ -21,16 +21,16 @@
 		"velocity": 1000,
 		"Normal": {
 			"ang": "90",
-			"radius": "55",
-			"front1": "11.5",
-			"back1": "33",
+			"radius": "50",
+			"front1": "3",
+			"back1": "30",
 			"front2": "0",
 			"back2": "0",
-			"time": "0.056598663330078125",
-			"n": "4",
+			"time": "0.06507587432861328",
+			"n": "2",
 			"v": 1000,
-			"frontleft1": "11.5",
-			"frontleft2": "33",
+			"frontleft1": "7",
+			"frontleft2": "27",
 			"firstFront": "0",
 			"index": "1050176"
 		},
@@ -47,7 +47,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1050240"
 		},
 		"Orval": {
 			"ang": "180",
@@ -62,7 +62,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1050304"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -77,7 +77,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1050368"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -92,7 +92,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1050432"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -107,24 +107,24 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1050496"
 		}
 	},
 	"v1500": {
 		"velocity": 1500,
 		"Large": {
 			"ang": "90",
-			"radius": "115",
-			"front1": "26",
-			"back1": "20",
+			"radius": "125",
+			"front1": "16",
+			"back1": "15",
 			"front2": "0",
 			"back2": "0",
-			"time": "0.078895569",
+			"time": "0.08575630187988281",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "25",
+			"frontleft1": "17.5",
 			"frontleft2": "0",
-			"firstFront": "31.5",
+			"firstFront": "25.5",
 			"index": "1050560"
 		},
 		"Orval": {
@@ -139,50 +139,50 @@
 			"v": 1500,
 			"frontleft1": "20",
 			"frontleft2": "38",
-			"firstFront": "35",
+			"firstFront": "33",
 			"index": "1050624"
 		},
 		"Dia45": {
 			"ang": "45",
-			"radius": "100",
-			"front1": "26",
+			"radius": "105",
+			"front1": "21",
 			"back1": "40",
-			"front2": "67",
+			"front2": "59",
 			"back2": "10",
-			"time": "0.034302711486816406",
+			"time": "0.036017417907714844",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "24",
-			"frontleft2": "65",
-			"firstFront": "26",
+			"frontleft1": "27",
+			"frontleft2": "64",
+			"firstFront": "30",
 			"index": "1050688"
 		},
 		"Dia135": {
 			"ang": "135",
 			"radius": "80",
-			"front1": "33",
-			"back1": "20",
-			"front2": "25",
+			"front1": "36.5",
+			"back1": "8",
+			"front2": "29",
 			"back2": "25",
-			"time": "0.082325935",
+			"time": "0.08232593536376953",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "33",
-			"frontleft2": "22",
-			"firstFront": "40",
+			"frontleft1": "36.5",
+			"frontleft2": "29",
+			"firstFront": "42",
 			"index": "1050752"
 		},
 		"Dia90": {
 			"ang": "90",
 			"radius": "85",
-			"front1": "13.5",
-			"back1": "22",
+			"front1": "16.5",
+			"back1": "17",
 			"front2": "0",
 			"back2": "0",
-			"time": "0.058314323",
+			"time": "0.05831432342529297",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "12.5",
+			"frontleft1": "16.5",
 			"frontleft2": "0",
 			"firstFront": "0",
 			"index": "1050816"
@@ -192,17 +192,17 @@
 		"velocity": 1700,
 		"Large": {
 			"ang": "90",
-			"radius": "115",
-			"front1": "24.5",
+			"radius": "125",
+			"front1": "13.5",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
-			"time": "0.069613457",
+			"time": "0.0756673812866211",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "22",
+			"frontleft1": "13.5",
 			"frontleft2": "0",
-			"firstFront": "35.5",
+			"firstFront": "25",
 			"index": "1050880"
 		},
 		"Orval": {
@@ -222,45 +222,45 @@
 		},
 		"Dia45": {
 			"ang": "45",
-			"radius": "100",
-			"front1": "23",
+			"radius": "105",
+			"front1": "17",
 			"back1": "40",
-			"front2": "68",
+			"front2": "61",
 			"back2": "20",
-			"time": "0.030266762",
+			"time": "0.031780242919921875",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "20.5",
-			"frontleft2": "64",
+			"frontleft1": "25",
+			"frontleft2": "62",
 			"firstFront": "32.5",
 			"index": "1051008"
 		},
 		"Dia135": {
 			"ang": "135",
 			"radius": "80",
-			"front1": "33",
-			"back1": "23",
-			"front2": "23",
+			"front1": "33.5",
+			"back1": "10",
+			"front2": "22",
 			"back2": "25",
-			"time": "0.072640419",
+			"time": "0.07264041900634766",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "32",
-			"frontleft2": "18",
+			"frontleft1": "33.5",
+			"frontleft2": "24",
 			"firstFront": "35.5",
 			"index": "1051072"
 		},
 		"Dia90": {
 			"ang": "90",
 			"radius": "83",
-			"front1": "13.5",
-			"back1": "22",
+			"front1": "12.5",
+			"back1": "17",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.050243378",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "10.25",
+			"frontleft1": "13.5",
 			"frontleft2": "0",
 			"firstFront": "0",
 			"index": "1051136"
@@ -426,15 +426,15 @@
 		"velocity": 2000,
 		"Large": {
 			"ang": "90",
-			"radius": "115",
-			"front1": "15.5",
-			"back1": "20",
+			"radius": "125",
+			"front1": "6",
+			"back1": "25",
 			"front2": "0",
 			"back2": "0",
-			"time": "0.059171677",
+			"time": "0.0643167495727539",
 			"n": "4",
 			"v": 2000,
-			"frontleft1": "12.5",
+			"frontleft1": "6",
 			"frontleft2": "0",
 			"firstFront": "35.5",
 			"index": "1051840"
@@ -447,12 +447,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2000,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1051904"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -462,12 +462,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2000,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1051968"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -477,12 +477,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2000,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052032"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -492,30 +492,30 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2000,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052096"
 		}
 	},
 	"v2100": {
 		"velocity": 2100,
 		"Large": {
 			"ang": "90",
-			"radius": "115",
-			"front1": "23.5",
-			"back1": "20",
+			"radius": "125",
+			"front1": "30",
+			"back1": "30",
 			"front2": "0",
 			"back2": "0",
-			"time": "0",
-			"n": "0",
+			"time": "0.06125450134277344",
+			"n": "4",
 			"v": 2100,
-			"frontleft1": "0",
+			"frontleft1": "30",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052160"
 		},
 		"Orval": {
 			"ang": "180",
@@ -525,12 +525,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2100,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052224"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -540,12 +540,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2100,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052288"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -555,12 +555,12 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2100,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052352"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -570,12 +570,90 @@
 			"front2": "0",
 			"back2": "0",
 			"time": "0",
-			"n": "0",
+			"n": "4",
 			"v": 2100,
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "0"
+			"index": "1052416"
+		}
+	},
+	"v2200": {
+		"velocity": 2200,
+		"Large": {
+			"ang": "90",
+			"radius": "115",
+			"front1": "13",
+			"back1": "24",
+			"front2": "0",
+			"back2": "0",
+			"time": "0.05379295349121094",
+			"n": "4",
+			"v": 2200,
+			"frontleft1": "13",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1052480"
+		},
+		"Orval": {
+			"ang": "180",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "4",
+			"v": 2200,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1052544"
+		},
+		"Dia45": {
+			"ang": "45",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "4",
+			"v": 2200,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1052608"
+		},
+		"Dia135": {
+			"ang": "135",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "4",
+			"v": 2200,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1052672"
+		},
+		"Dia90": {
+			"ang": "90",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "4",
+			"v": 2200,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1052736"
 		}
 	}
 }
