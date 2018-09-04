@@ -478,6 +478,9 @@ function applySensorData(d) {
     $("#rs1").html(Math.round(d.right));
     $("#rf1").html(Math.round(d.front));
 
+    $("#rsd").html(Math.round(d.rightdist));
+    $("#lsd").html(Math.round(d.leftdist));
+
     $("#gyro").html(d.gyro);
     $("#battery").html(d.battery + "V");
 }

@@ -163,50 +163,44 @@ let getMergeCellList = function () {
 function createStr(rows, index) {
     let str = "";
     str = `void set${rows[1]}Param${rows[0]}(){`;
-    str += `myprintf("----turn=${rows[1]}   v=${rows[0]}-----------\\r\\n");`
-    str += `float ang,radius,front1,back1,front2,back2,time,n,v,frontleft1,frontleft2,firstfront;`;
+    // str += `myprintf("----turn=${rows[1]}   v=${rows[0]}-----------\\r\\n");`
 
-    str += `ang=*(float *)${index};myprintf("ang\t%f\t%d\\r\\n",ang,${index});\r\n`;
-    index += 4;
-
-    str += `radius=*(float *)${index};myprintf("radius\t%f\t%d\\r\\n",radius,${index});\r\n`;
-    index += 4;
-
-    str += `front1=*(float *)${index};myprintf("front1\t%f\t%d\\r\\n",front1,${index});\r\n`;
-    index += 4;
-
-    str += `back1=*(float *)${index};myprintf("back1\t%f\t%d\\r\\n",back1,${index});\r\n`;
-    index += 4;
-
-    str += `front2=*(float *)${index};myprintf("front2\t%f\t%d\\r\\n",front2,${index});\r\n`;
-    index += 4;
-
-    str += `back2=*(float *)${index};myprintf("back2\t%f\t%d\\r\\n",back2,${index});\r\n`;
-    index += 4;
-
-    str += `time=*(float *)${index};myprintf("time\t%f\t%d\\r\\n",time,${index});\r\n`;
-    index += 4;
-
-    str += `n=*(float *)${index};myprintf("n\t%f\t%d\\r\\n",n,${index});\r\n`;
-    index += 4;
-
-    str += `v=*(float *)${index};myprintf("v\t%f\t%d\\r\\n",v,${index});\r\n`;
-    index += 4;
-
-    str += `frontleft1=*(float *)${index};myprintf("frontleft1\t%f\t%d\\r\\n",frontleft1,${index});\r\n`;
-    index += 4;
-
-    str += `frontleft2=*(float *)${index};myprintf("frontleft2\t%f\t%d\\r\\n",frontleft2,${index});\r\n`;
-    index += 4;
-
-    str += `firstfront=*(float *)${index};myprintf("firstfront\t%f\t%d\\r\\n",firstfront,${index});\r\n`;
-
-    str += `setPrms(${rows[1]},  ang, radius,  front1,
-		 back1,  front2,  back2,  time,  n, v) ;
-	setPrms3(${rows[1]}, frontleft1, frontleft2, firstfront);`
-
-    str += `myprintf("----------------------------------\\r\\n");}
+    str += `float p[12];
+        for (char i = 0; i < 12; i++) {
+            p[i] = *(float *) (${index} + 4 * i);
+        }
+        setPrms(${rows[1]},  p[0], p[1],  p[2],   p[3],  p[4],  p[5],  p[6],  p[7], p[8]) ;
+        setPrms3(${rows[1]}, p[9], p[10], p[11]);
     `;
+    // str += `float ang,radius,front1,back1,front2,back2,time,n,v,frontleft1,frontleft2,firstfront;`;
+    // str += `ang=*(float *)${index};//myprintf("ang\t%f\t%d\\r\\n",ang,${index});\r\n`;
+    // index += 4;
+    // str += `radius=*(float *)${index};//myprintf("radius\t%f\t%d\\r\\n",radius,${index});\r\n`;
+    // index += 4;
+    // str += `front1=*(float *)${index};//myprintf("front1\t%f\t%d\\r\\n",front1,${index});\r\n`;
+    // index += 4;
+    // str += `back1=*(float *)${index};//myprintf("back1\t%f\t%d\\r\\n",back1,${index});\r\n`;
+    // index += 4;
+    // str += `front2=*(float *)${index};//myprintf("front2\t%f\t%d\\r\\n",front2,${index});\r\n`;
+    // index += 4;
+    // str += `back2=*(float *)${index};//myprintf("back2\t%f\t%d\\r\\n",back2,${index});\r\n`;
+    // index += 4;
+    // str += `time=*(float *)${index};//myprintf("time\t%f\t%d\\r\\n",time,${index});\r\n`;
+    // index += 4;
+    // str += `n=*(float *)${index};//myprintf("n\t%f\t%d\\r\\n",n,${index});\r\n`;
+    // index += 4;
+    // str += `v=*(float *)${index};//myprintf("v\t%f\t%d\\r\\n",v,${index});\r\n`;
+    // index += 4;
+    // str += `frontleft1=*(float *)${index};//myprintf("frontleft1\t%f\t%d\\r\\n",frontleft1,${index});\r\n`;
+    // index += 4;
+    // str += `frontleft2=*(float *)${index};//myprintf("frontleft2\t%f\t%d\\r\\n",frontleft2,${index});\r\n`;
+    // index += 4;
+    // str += `firstfront=*(float *)${index};//myprintf("firstfront\t%f\t%d\\r\\n",firstfront,${index});\r\n`;
+    // str += `setPrms(${rows[1]},  ang, radius,  front1,
+	// 	 back1,  front2,  back2,  time,  n, v) ;
+	// setPrms3(${rows[1]}, frontleft1, frontleft2, firstfront);`
+    // str += `myprintf("----------------------------------\\r\\n");\r\n}`;
+    str += `}`;
 
     return str;
 }

@@ -49,6 +49,22 @@
     font-size: 24px;
 }
 
+#exia #rsd {
+    position: inherit;
+    top: 25px;
+    right: 30px;
+    color: red;
+    font-size: 24px;
+}
+
+#exia #lsd {
+    position: inherit;
+    top: 25px;
+    left: 30px;
+    color: red;
+    font-size: 24px;
+}
+
 #exia #ls1 {
     position: inherit;
     top: 50px;
@@ -493,10 +509,12 @@ ul {
 #cmdlist ul {
     margin-left: -25px;
 }
-#cmd{
+
+#cmd {
     text-align: left;
     background-color: aliceblue
 }
-#cmd div{
+
+#cmd div {
     margin-left: -25px;
 }
