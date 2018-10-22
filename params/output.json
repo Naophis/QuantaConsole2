@@ -19,7 +19,7 @@
 				"id": 1049352,
 				"name": "Vel.Kp",
 				"value": "0.00235",
-				"descript": "重心速度ゲイン P 0.00225"
+				"descript": "重心速度ゲイン P 0.00235"
 			},
 			{
 				"id": 1049356,
@@ -54,7 +54,7 @@
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.012",
+				"value": "0.02",
 				"descript": "通常時直進ゲイン P0.02 0.0025"
 			},
 			{
@@ -66,13 +66,13 @@
 			{
 				"id": 1049384,
 				"name": "Sen.Kd",
-				"value": "0.012",
+				"value": "0.02",
 				"descript": "通常時直進ゲインD 0.02"
 			},
 			{
 				"id": 1049388,
 				"name": "Sen_Dia_Side.Kp",
-				"value": "0.00175",
+				"value": "0.00125",
 				"descript": "斜め直進ゲイン P 0.00175"
 			},
 			{
@@ -126,7 +126,7 @@
 				"id": 1049424,
 				"name": "Dists.Kp",
 				"value": "5.5",
-				"descript": "7.5 5.5"
+				"descript": "5.5"
 			},
 			{
 				"id": 1049428,
@@ -162,7 +162,7 @@
 			{
 				"id": 1049452,
 				"name": "searchrange",
-				"value": "8"
+				"value": "0"
 			},
 			{
 				"id": 1049456,
@@ -183,6 +183,21 @@
 				"id": 1049468,
 				"name": "CgLimit",
 				"value": "4.5"
+			},
+			{
+				"id": 1049472,
+				"name": "sysIdVoltR",
+				"value": "2.5"
+			},
+			{
+				"id": 1049476,
+				"name": "sysIdVoltL",
+				"value": "-2.5"
+			},
+			{
+				"id": 1049480,
+				"name": "detecttimelimit",
+				"value": "10000"
 			}
 		]
 	},
@@ -193,7 +208,7 @@
 			{
 				"id": 1049600,
 				"name": "RS_SEN45.ref",
-				"value": "885",
+				"value": "925",
 				"descript": "直進　右センサー　ref 885"
 			},
 			{
@@ -205,13 +220,13 @@
 			{
 				"id": 1049608,
 				"name": "RS_SEN45.ref2",
-				"value": "2000",
+				"value": "2100",
 				"descript": "未調整　斜め直進時中央右センサー"
 			},
 			{
 				"id": 1049612,
 				"name": "LS_SEN45.ref2",
-				"value": "2730",
+				"value": "2300",
 				"descript": "未調整　斜め直進時中央左センサー"
 			},
 			{
@@ -271,37 +286,37 @@
 			{
 				"id": 1049652,
 				"name": "RS_SEN2.ref2",
-				"value": "4096",
+				"value": "3300",
 				"descript": "斜め　右センサー　ref"
 			},
 			{
 				"id": 1049656,
 				"name": "LS_SEN2.ref2",
-				"value": "3030",
+				"value": "1500",
 				"descript": "斜め　左センサー　ref"
 			},
 			{
 				"id": 1049660,
 				"name": "R_WALL_DIA",
-				"value": "2500",
+				"value": "1700",
 				"descript": "制御閾値"
 			},
 			{
 				"id": 1049664,
 				"name": "L_WALL_DIA",
-				"value": "2400",
+				"value": "2000",
 				"descript": "制御閾値"
 			},
 			{
 				"id": 1049668,
 				"name": "R_WALL_DIA2",
-				"value": "1600",
+				"value": "2800",
 				"descript": "制御閾値 90度センサー"
 			},
 			{
 				"id": 1049672,
 				"name": "L_WALL_DIA2",
-				"value": "1700",
+				"value": "1300",
 				"descript": "制御閾値 90度センサー"
 			},
 			{
@@ -331,7 +346,7 @@
 			{
 				"id": 1049692,
 				"name": "FRONT_WALL_EXIST2",
-				"value": "740",
+				"value": "900",
 				"descript": "探索　正面センサー"
 			},
 			{
@@ -379,8 +394,14 @@
 			{
 				"id": 1049724,
 				"name": "FRONT_CTRL_1",
-				"value": "1705",
+				"value": "1250",
 				"descript": "前壁補正 1250 1705"
+			},
+			{
+				"id": 1049728,
+				"name": "RF_WALL_EXIST2",
+				"value": "900",
+				"descript": "前壁補正 前提閾値"
 			}
 		]
 	},
@@ -481,13 +502,13 @@
 			{
 				"id": 1049916,
 				"name": "searchWallOffDistR",
-				"value": "14.0",
+				"value": "15.0",
 				"descript": "21"
 			},
 			{
 				"id": 1049920,
 				"name": "searchWallOffDistL",
-				"value": "16.75",
+				"value": "17.0",
 				"descript": "21"
 			},
 			{
@@ -545,12 +566,12 @@
 			{
 				"id": 1049964,
 				"name": "rightCtrlDiff",
-				"value": "40"
+				"value": "80"
 			},
 			{
 				"id": 1049968,
 				"name": "leftCtrlDiff",
-				"value": "40"
+				"value": "80"
 			},
 			{
 				"id": 1049972,
@@ -576,7 +597,7 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.680",
+				"value": "23.6250",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
@@ -648,19 +669,19 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "2100",
+				"value": "1500",
 				"descript": "テスト用スラローム速度"
 			},
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "22000",
+				"value": "10000",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "5000",
+				"value": "3500",
 				"descript": "テスト用最高速度"
 			},
 			{
@@ -672,7 +693,7 @@
 			{
 				"id": 1049280,
 				"name": "test_sla_scenario",
-				"value": "2",
+				"value": "3",
 				"descript": "スラロームのシナリオパターン"
 			},
 			{
@@ -696,13 +717,13 @@
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "900",
+				"value": "2700",
 				"descript": "テスト直進"
 			},
 			{
 				"id": 1049300,
 				"name": "test_distance_dia",
-				"value": "900",
+				"value": "2200",
 				"descript": "テスト直進（斜め） 763.6753236"
 			},
 			{
@@ -726,7 +747,7 @@
 			{
 				"id": 1049316,
 				"name": "test_turn_w",
-				"value": "2",
+				"value": "20",
 				"descript": "テスト超信地角速度"
 			},
 			{
@@ -756,13 +777,13 @@
 			{
 				"id": 1049336,
 				"name": "goalX",
-				"value": "3",
+				"value": "7",
 				"descript": "ゴール座標X"
 			},
 			{
 				"id": 1049340,
 				"name": "goalY",
-				"value": "0",
+				"value": "7",
 				"descript": "ゴール座標Y"
 			}
 		]
