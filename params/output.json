@@ -509,7 +509,7 @@
 			{
 				"id": 1049896,
 				"name": "FRONT_WALL_ON",
-				"value": "570",
+				"value": "630",
 				"descript": "壁切れ時正面壁アリ制御"
 			},
 			{
@@ -721,25 +721,25 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "500",
+				"value": "1000",
 				"descript": "テスト用スラローム速度"
 			},
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "2200",
+				"value": "6000",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "500",
+				"value": "1000",
 				"descript": "テスト用最高速度"
 			},
 			{
 				"id": 1049276,
 				"name": "test_dia",
-				"value": "0",
+				"value": "1",
 				"descript": "強制斜めモード"
 			},
 			{
@@ -775,7 +775,7 @@
 			{
 				"id": 1049300,
 				"name": "test_distance_dia",
-				"value": "720",
+				"value": "20",
 				"descript": "テスト直進（斜め） 763.6753236"
 			},
 			{
