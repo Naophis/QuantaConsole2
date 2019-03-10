@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "server": "node server.js"
+    "server": "node server.js",
+    "diagonal": "node src3/diagonal.js"
   },
   "author": "naophis",
   "license": "ISC"

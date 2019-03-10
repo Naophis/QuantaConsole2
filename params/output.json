@@ -6,26 +6,26 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.00106335",
+				"value": "0.0010642",
 				"descript": "ゲイン(ジャイロ)右回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.00106330",
+				"value": "0.0010640",
 				"descript": "ゲイン(ジャイロ)左回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049352,
 				"name": "Vel.Kp",
-				"value": "0.00265",
-				"descript": "重心速度ゲイン P 0.00235 0.00225 0.00265"
+				"value": "0.00235",
+				"descript": "重心速度ゲイン P 0.00235 0.00225 0.00265 0.01"
 			},
 			{
 				"id": 1049356,
 				"name": "Vel.Ki",
-				"value": "0.000925",
-				"descript": "重心速度ゲイン I 0.000875 0.000925"
+				"value": "0.001",
+				"descript": "重心速度ゲイン I 0.000875 0.000925 35"
 			},
 			{
 				"id": 1049360,
@@ -37,54 +37,54 @@
 				"id": 1049364,
 				"name": "Gyro.Kp",
 				"value": "1.45",
-				"descript": "角速度ゲイン P 1.45   1.15 0.75"
+				"descript": "角速度ゲイン P 1.45   1.15 0.75 0.5    1.25"
 			},
 			{
 				"id": 1049368,
 				"name": "Gyro.Ki",
-				"value": "0.0215",
-				"descript": "角速度ゲイン I 0.03975 0.0125  0.0185 0.0215"
+				"value": "0.025",
+				"descript": "角速度ゲイン I 0.03975 0.0125  0.0185 0.0215 0.03 75 100  325"
 			},
 			{
 				"id": 1049372,
 				"name": "Gyro.Kd",
-				"value": "4.5",
+				"value": "0",
 				"descript": "角速度ゲイン D 17.75  18.25 3"
 			},
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.02",
+				"value": "0.125",
 				"descript": "通常時直進ゲイン P0.02 0.0025"
 			},
 			{
 				"id": 1049380,
 				"name": "Sen.Ki",
-				"value": "0.000",
+				"value": "55",
 				"descript": "通常時直進ゲイン I0.0"
 			},
 			{
 				"id": 1049384,
 				"name": "Sen.Kd",
-				"value": "0.02",
+				"value": "0",
 				"descript": "通常時直進ゲインD 0.02"
 			},
 			{
 				"id": 1049388,
 				"name": "Sen_Dia_Side.Kp",
-				"value": "0.00425",
-				"descript": "斜め直進ゲイン P 0.0085 0.0125"
+				"value": "0.125",
+				"descript": "斜め直進ゲイン P 0.0085 0.0125 0.125"
 			},
 			{
 				"id": 1049392,
 				"name": "Sen_Dia_Side.Ki",
-				"value": "0",
+				"value": "50",
 				"descript": "斜め直進ゲイン I"
 			},
 			{
 				"id": 1049396,
 				"name": "Sen_Dia_Side.Kd",
-				"value": "0.00425",
+				"value": "0",
 				"descript": "斜め直進ゲイン D 0.0085 0.0125"
 			},
 			{
@@ -102,7 +102,7 @@
 			{
 				"id": 1049408,
 				"name": "autostart",
-				"value": "0",
+				"value": "1",
 				"descript": "オートスタート"
 			},
 			{
@@ -182,7 +182,8 @@
 			{
 				"id": 1049468,
 				"name": "CgLimit",
-				"value": "4.5"
+				"value": "6.5",
+				"descript": "4.5"
 			},
 			{
 				"id": 1049472,
@@ -208,13 +209,13 @@
 			{
 				"id": 1049600,
 				"name": "RS_SEN45.ref",
-				"value": "1142",
+				"value": "1085",
 				"descript": "直進　右センサー　ref 885"
 			},
 			{
 				"id": 1049604,
 				"name": "LS_SEN45.ref",
-				"value": "999",
+				"value": "925",
 				"descript": "直進　左センサー　ref"
 			},
 			{
@@ -352,14 +353,14 @@
 			{
 				"id": 1049696,
 				"name": "L_WALL_EXIST3",
-				"value": "600",
-				"descript": "No Need"
+				"value": "400",
+				"descript": "探索90度センサー"
 			},
 			{
 				"id": 1049700,
 				"name": "R_WALL_EXIST3",
-				"value": "600",
-				"descript": "No Need"
+				"value": "400",
+				"descript": "探索90度センサー"
 			},
 			{
 				"id": 1049704,
@@ -412,7 +413,8 @@
 			{
 				"id": 1049736,
 				"name": "difforder90",
-				"value": "100"
+				"value": "100",
+				"descript": "100"
 			},
 			{
 				"id": 1049740,
@@ -422,23 +424,145 @@
 			{
 				"id": 1049744,
 				"name": "diffthread90",
-				"value": "100"
+				"value": "100",
+				"descript": "100"
 			},
 			{
 				"id": 1049748,
 				"name": "gyrodifflimit",
-				"value": "500",
+				"value": "90.5",
 				"descript": "4.5"
 			},
 			{
 				"id": 1049752,
 				"name": "gyroMode",
-				"value": "0"
+				"value": "0",
+				"descript": "1: 0.1,0.9 mode"
 			},
 			{
 				"id": 1049756,
 				"name": "gyrooffset",
 				"value": "0.01"
+			},
+			{
+				"id": 1049760,
+				"name": "diaCtrlMode",
+				"value": "1",
+				"descript": "0:切れ目でリセット"
+			},
+			{
+				"id": 1049764,
+				"name": "diaCtrlMode2",
+				"value": "1",
+				"descript": "斜め中のGyroの積分値リセット"
+			},
+			{
+				"id": 1049768,
+				"name": "shortcut",
+				"value": "0"
+			},
+			{
+				"id": 1049772,
+				"name": "FRONT_OUT",
+				"value": "1500"
+			},
+			{
+				"id": 1049776,
+				"name": "diaOffset1000",
+				"value": "0"
+			},
+			{
+				"id": 1049780,
+				"name": "diaOffset1500",
+				"value": "0"
+			},
+			{
+				"id": 1049784,
+				"name": "diaOffset2000",
+				"value": "0"
+			},
+			{
+				"id": 1049788,
+				"name": "diaOffset2500",
+				"value": "0"
+			},
+			{
+				"id": 1049792,
+				"name": "diaOffset3000",
+				"value": "0"
+			},
+			{
+				"id": 1049796,
+				"name": "diaOffset3500",
+				"value": "0"
+			},
+			{
+				"id": 1049800,
+				"name": "gyroMode2",
+				"value": "1"
+			},
+			{
+				"id": 1049804,
+				"name": "Veclocity_oldEnable",
+				"value": "1"
+			},
+			{
+				"id": 1049808,
+				"name": "Gyro_oldEnable",
+				"value": "1"
+			},
+			{
+				"id": 1049812,
+				"name": "Sensor_oldEnable",
+				"value": "1"
+			},
+			{
+				"id": 1049816,
+				"name": "gyroConfig",
+				"value": "1"
+			},
+			{
+				"id": 1049820,
+				"name": "gyroConfig2",
+				"value": "0"
+			},
+			{
+				"id": 1049824,
+				"name": "SensorDia_oldEnable",
+				"value": "1"
+			},
+			{
+				"id": 1049828,
+				"name": "gyroResetEnable",
+				"value": "1",
+				"descript": "斜め中の積分リセットフラグ"
+			},
+			{
+				"id": 1049832,
+				"name": "gyroResetRange",
+				"value": "3",
+				"descript": "斜め中の積分リセット条件"
+			},
+			{
+				"id": 1049836,
+				"name": "FrontCtrl3_th",
+				"value": "0"
+			},
+			{
+				"id": 1049840,
+				"name": "FRONT_CTRL_3",
+				"value": "2000"
+			},
+			{
+				"id": 1049844,
+				"name": "autoReturn",
+				"value": "1",
+				"descript": "最短　戻る"
+			},
+			{
+				"id": 1049848,
+				"name": "gyroAngleCtrl",
+				"value": "1"
 			}
 		]
 	},
@@ -449,13 +573,13 @@
 			{
 				"id": 1049856,
 				"name": "R_WALL_OFF",
-				"value": "880",
+				"value": "820",
 				"descript": "壁切れ閾値 880"
 			},
 			{
 				"id": 1049860,
 				"name": "L_WALL_OFF",
-				"value": "760",
+				"value": "785",
 				"descript": "壁切れ閾値"
 			},
 			{
@@ -473,13 +597,13 @@
 			{
 				"id": 1049872,
 				"name": "R_WALL_OFF_D",
-				"value": "2000",
+				"value": "2100",
 				"descript": "斜め壁切れの閾値（R）"
 			},
 			{
 				"id": 1049876,
 				"name": "L_WALL_OFF_D",
-				"value": "2000",
+				"value": "2200",
 				"descript": "斜め壁切れの閾値（L）"
 			},
 			{
@@ -509,7 +633,7 @@
 			{
 				"id": 1049896,
 				"name": "FRONT_WALL_ON",
-				"value": "630",
+				"value": "480",
 				"descript": "壁切れ時正面壁アリ制御"
 			},
 			{
@@ -521,31 +645,31 @@
 			{
 				"id": 1049904,
 				"name": "DIA_N_LEFT_WALL",
-				"value": "1050",
+				"value": "1100",
 				"descript": "斜め壁アリ補正（R）"
 			},
 			{
 				"id": 1049908,
 				"name": "DIA_N_RIGHT_WALL",
-				"value": "1200",
+				"value": "1460",
 				"descript": "斜め壁アリ補正（L）"
 			},
 			{
 				"id": 1049912,
 				"name": "DIA_FRONT_WALL_ORDER",
-				"value": "600",
+				"value": "340",
 				"descript": "壁切れ時正面壁アリ制御＿斜め"
 			},
 			{
 				"id": 1049916,
 				"name": "searchWallOffDistR",
-				"value": "18",
+				"value": "19",
 				"descript": "20.0"
 			},
 			{
 				"id": 1049920,
 				"name": "searchWallOffDistL",
-				"value": "18",
+				"value": "19.5",
 				"descript": "19.5"
 			},
 			{
@@ -574,8 +698,8 @@
 			{
 				"id": 1049940,
 				"name": "fastRunFan",
-				"value": "9.0",
-				"descript": "9.0 10.75"
+				"value": "9",
+				"descript": "9.0"
 			},
 			{
 				"id": 1049944,
@@ -609,25 +733,25 @@
 			{
 				"id": 1049964,
 				"name": "rightCtrlDiff",
-				"value": "30",
+				"value": "40",
 				"descript": "壁制御　マイナス方向許容値"
 			},
 			{
 				"id": 1049968,
 				"name": "leftCtrlDiff",
-				"value": "30",
+				"value": "40",
 				"descript": "壁制御　マイナス方向許容値"
 			},
 			{
 				"id": 1049972,
 				"name": "kireme_R",
-				"value": "11",
+				"value": "14",
 				"descript": "壁制御　切れ目オーダー"
 			},
 			{
 				"id": 1049976,
 				"name": "kireme_L",
-				"value": "11",
+				"value": "14",
 				"descript": "壁制御　切れ目オーダー"
 			},
 			{
@@ -638,7 +762,44 @@
 			{
 				"id": 1049984,
 				"name": "fastRunFanV2",
-				"value": "10.0"
+				"value": "10.0",
+				"descript": "10.0 9.25"
+			},
+			{
+				"id": 1049988,
+				"name": "CalibrationMode",
+				"value": "0"
+			},
+			{
+				"id": 1049992,
+				"name": "CalibrationFront",
+				"value": "2600"
+			},
+			{
+				"id": 1049996,
+				"name": "CalibrationFrontDiff",
+				"value": "100"
+			},
+			{
+				"id": 1050000,
+				"name": "calibrateV",
+				"value": "100"
+			},
+			{
+				"id": 1050004,
+				"name": "calibrateacc",
+				"value": "6000"
+			},
+			{
+				"id": 1050008,
+				"name": "calibratedist",
+				"value": "50",
+				"descript": "以下入力NG"
+			},
+			{
+				"id": 1050012,
+				"name": "calibratedist2",
+				"value": "60"
 			}
 		]
 	},
@@ -649,7 +810,7 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.950",
+				"value": "23.9525",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
@@ -721,19 +882,19 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "1000",
+				"value": "2000",
 				"descript": "テスト用スラローム速度"
 			},
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "6000",
+				"value": "18000",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "1000",
+				"value": "2000",
 				"descript": "テスト用最高速度"
 			},
 			{
@@ -757,25 +918,25 @@
 			{
 				"id": 1049288,
 				"name": "test_sla_return_flg",
-				"value": "0",
+				"value": "1",
 				"descript": "スラローム往復フラグ"
 			},
 			{
 				"id": 1049292,
 				"name": "test_sla_return_scenario",
-				"value": "3",
+				"value": "4",
 				"descript": "スラローム往復時シナリオ"
 			},
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "900",
+				"value": "1080",
 				"descript": "テスト直進"
 			},
 			{
 				"id": 1049300,
 				"name": "test_distance_dia",
-				"value": "20",
+				"value": "600",
 				"descript": "テスト直進（斜め） 763.6753236"
 			},
 			{
@@ -829,13 +990,13 @@
 			{
 				"id": 1049336,
 				"name": "goalX",
-				"value": "7",
+				"value": "3",
 				"descript": "ゴール座標X"
 			},
 			{
 				"id": 1049340,
 				"name": "goalY",
-				"value": "7",
+				"value": "0",
 				"descript": "ゴール座標Y"
 			}
 		]
