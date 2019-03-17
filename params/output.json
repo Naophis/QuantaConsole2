@@ -6,25 +6,25 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.0010642",
+				"value": "0.0010625",
 				"descript": "ゲイン(ジャイロ)右回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.0010640",
+				"value": "0.0010625",
 				"descript": "ゲイン(ジャイロ)左回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049352,
 				"name": "Vel.Kp",
-				"value": "0.00235",
+				"value": "0.00225",
 				"descript": "重心速度ゲイン P 0.00235 0.00225 0.00265 0.01"
 			},
 			{
 				"id": 1049356,
 				"name": "Vel.Ki",
-				"value": "0.001",
+				"value": "0.0015",
 				"descript": "重心速度ゲイン I 0.000875 0.000925 35"
 			},
 			{
@@ -36,13 +36,13 @@
 			{
 				"id": 1049364,
 				"name": "Gyro.Kp",
-				"value": "1.45",
+				"value": "1.75",
 				"descript": "角速度ゲイン P 1.45   1.15 0.75 0.5    1.25"
 			},
 			{
 				"id": 1049368,
 				"name": "Gyro.Ki",
-				"value": "0.025",
+				"value": "0.0315",
 				"descript": "角速度ゲイン I 0.03975 0.0125  0.0185 0.0215 0.03 75 100  325"
 			},
 			{
@@ -54,13 +54,13 @@
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.125",
+				"value": "0.025",
 				"descript": "通常時直進ゲイン P0.02 0.0025"
 			},
 			{
 				"id": 1049380,
 				"name": "Sen.Ki",
-				"value": "55",
+				"value": "0",
 				"descript": "通常時直進ゲイン I0.0"
 			},
 			{
@@ -182,8 +182,8 @@
 			{
 				"id": 1049468,
 				"name": "CgLimit",
-				"value": "6.5",
-				"descript": "4.5"
+				"value": "10",
+				"descript": "4.5 6.5"
 			},
 			{
 				"id": 1049472,
@@ -215,7 +215,7 @@
 			{
 				"id": 1049604,
 				"name": "LS_SEN45.ref",
-				"value": "925",
+				"value": "1005",
 				"descript": "直進　左センサー　ref"
 			},
 			{
@@ -514,7 +514,7 @@
 			{
 				"id": 1049812,
 				"name": "Sensor_oldEnable",
-				"value": "1"
+				"value": "0"
 			},
 			{
 				"id": 1049816,
@@ -810,7 +810,7 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.9525",
+				"value": "25.125",
 				"descript": "タイヤ直径(mm)"
 			},
 			{
@@ -882,25 +882,25 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "2000",
+				"value": "500",
 				"descript": "テスト用スラローム速度"
 			},
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "18000",
+				"value": "2200",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "2000",
+				"value": "500",
 				"descript": "テスト用最高速度"
 			},
 			{
 				"id": 1049276,
 				"name": "test_dia",
-				"value": "1",
+				"value": "0",
 				"descript": "強制斜めモード"
 			},
 			{
@@ -924,13 +924,13 @@
 			{
 				"id": 1049292,
 				"name": "test_sla_return_scenario",
-				"value": "4",
+				"value": "5",
 				"descript": "スラローム往復時シナリオ"
 			},
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "1080",
+				"value": "900",
 				"descript": "テスト直進"
 			},
 			{
@@ -948,7 +948,7 @@
 			{
 				"id": 1049308,
 				"name": "test_turn_times",
-				"value": "0",
+				"value": "1",
 				"descript": "テスト超信地回転回数"
 			},
 			{
