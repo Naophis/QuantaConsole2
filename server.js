@@ -90,6 +90,10 @@ let ready = function () {
                 Tune.load(target, socket);
             }
         });
+        
+        socket.on("all_write", function (target) {
+            Tune.load(target, socket);
+        });
     });
 }
 

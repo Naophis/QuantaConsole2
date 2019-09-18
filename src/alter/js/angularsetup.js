@@ -37,6 +37,9 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
     $scope.load = function (id) {
         socket.emit("load", "fastrun.json");
     }
+    $scope.all_write = function (id) {
+        socket.emit("all_write");
+    }
     $scope.connect = function (id) {
         let target = $.isNumeric(id) ? id : null;
         socket.emit("load", id);
