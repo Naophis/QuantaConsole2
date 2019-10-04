@@ -1,4 +1,97 @@
 {
+	"v150": {
+		"velocity": 150,
+		"Normal": {
+			"ang": "90",
+			"radius": "50",
+			"front1": "20",
+			"back1": "38",
+			"front2": "0",
+			"back2": "0",
+			"time": "0.3430328369140625",
+			"n": "4",
+			"v": 150,
+			"frontleft1": "20",
+			"frontleft2": "37",
+			"firstFront": "0",
+			"index": "1050048"
+		},
+		"Large": {
+			"ang": "90",
+			"radius": "98",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "1",
+			"back2": "0",
+			"time": "0.1275491714477539",
+			"n": "2",
+			"v": 150,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050112"
+		},
+		"Orval": {
+			"ang": "180",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 150,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050176"
+		},
+		"Dia45": {
+			"ang": "45",
+			"radius": "125",
+			"front1": "0",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0.08135223388671875",
+			"n": "2",
+			"v": 150,
+			"frontleft1": "4",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050240"
+		},
+		"Dia135": {
+			"ang": "135",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 150,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050304"
+		},
+		"Dia90": {
+			"ang": "90",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 150,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050368"
+		}
+	},
 	"v500": {
 		"velocity": 500,
 		"Normal": {
@@ -14,7 +107,82 @@
 			"frontleft1": "20",
 			"frontleft2": "37",
 			"firstFront": "0",
-			"index": "1050112"
+			"index": "1050432"
+		},
+		"Large": {
+			"ang": "90",
+			"radius": "98",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "1",
+			"back2": "0",
+			"time": "0.1275491714477539",
+			"n": "2",
+			"v": 500,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050496"
+		},
+		"Orval": {
+			"ang": "180",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 500,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050560"
+		},
+		"Dia45": {
+			"ang": "45",
+			"radius": "125",
+			"front1": "0",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0.08135223388671875",
+			"n": "2",
+			"v": 500,
+			"frontleft1": "4",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050624"
+		},
+		"Dia135": {
+			"ang": "135",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 500,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050688"
+		},
+		"Dia90": {
+			"ang": "90",
+			"radius": "115",
+			"front1": "23.5",
+			"back1": "20",
+			"front2": "0",
+			"back2": "0",
+			"time": "0",
+			"n": "0",
+			"v": 500,
+			"frontleft1": "0",
+			"frontleft2": "0",
+			"firstFront": "0",
+			"index": "1050752"
 		}
 	},
 	"v1000": {
@@ -32,7 +200,7 @@
 			"frontleft1": "7",
 			"frontleft2": "28",
 			"firstFront": "0",
-			"index": "1050176"
+			"index": "1050816"
 		},
 		"Large": {
 			"ang": "90",
@@ -47,7 +215,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050240"
+			"index": "1050880"
 		},
 		"Orval": {
 			"ang": "180",
@@ -62,7 +230,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050304"
+			"index": "1050944"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -77,7 +245,7 @@
 			"frontleft1": "4",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050368"
+			"index": "1051008"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -92,7 +260,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050432"
+			"index": "1051072"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -107,7 +275,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050496"
+			"index": "1051136"
 		}
 	},
 	"v1500": {
@@ -115,7 +283,7 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "25",
+			"front1": "29",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
@@ -125,7 +293,7 @@
 			"frontleft1": "25",
 			"frontleft2": "0",
 			"firstFront": "30",
-			"index": "1050560"
+			"index": "1051200"
 		},
 		"Orval": {
 			"ang": "180",
@@ -140,52 +308,52 @@
 			"frontleft1": "10",
 			"frontleft2": "10",
 			"firstFront": "33",
-			"index": "1050624"
+			"index": "1051264"
 		},
 		"Dia45": {
 			"ang": "45",
 			"radius": "125",
-			"front1": "14.5",
+			"front1": "24",
 			"back1": "25",
-			"front2": "58",
+			"front2": "63",
 			"back2": "15",
 			"time": "0.0428924560546875",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "21",
-			"frontleft2": "60",
+			"frontleft1": "15",
+			"frontleft2": "57",
 			"firstFront": "16",
-			"index": "1050688"
+			"index": "1051328"
 		},
 		"Dia135": {
 			"ang": "135",
 			"radius": "80",
-			"front1": "39",
+			"front1": "43",
 			"back1": "12",
-			"front2": "25",
+			"front2": "33",
 			"back2": "30",
 			"time": "0.08232593536376953",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "42",
-			"frontleft2": "28",
+			"frontleft1": "43",
+			"frontleft2": "26",
 			"firstFront": "46",
-			"index": "1050752"
+			"index": "1051392"
 		},
 		"Dia90": {
 			"ang": "90",
 			"radius": "85",
-			"front1": "14",
+			"front1": "21",
 			"back1": "15",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.05831432342529297",
 			"n": "4",
 			"v": 1500,
-			"frontleft1": "16.5",
+			"frontleft1": "14",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1050816"
+			"index": "1051456"
 		}
 	},
 	"v1700": {
@@ -193,7 +361,7 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "21",
+			"front1": "26",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
@@ -203,7 +371,7 @@
 			"frontleft1": "21",
 			"frontleft2": "0",
 			"firstFront": "29",
-			"index": "1050880"
+			"index": "1051520"
 		},
 		"Orval": {
 			"ang": "180",
@@ -218,52 +386,52 @@
 			"frontleft1": "5",
 			"frontleft2": "10",
 			"firstFront": "33",
-			"index": "1050944"
+			"index": "1051584"
 		},
 		"Dia45": {
 			"ang": "45",
 			"radius": "105",
-			"front1": "20",
+			"front1": "25",
 			"back1": "30",
-			"front2": "62",
+			"front2": "60",
 			"back2": "20",
 			"time": "0.03179168701171875",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "21",
-			"frontleft2": "59",
+			"frontleft1": "23",
+			"frontleft2": "56",
 			"firstFront": "21",
-			"index": "1051008"
+			"index": "1051648"
 		},
 		"Dia135": {
 			"ang": "135",
 			"radius": "80",
-			"front1": "36",
+			"front1": "40",
 			"back1": "12",
-			"front2": "27",
+			"front2": "22",
 			"back2": "40",
 			"time": "0.07265472412109375",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "43",
-			"frontleft2": "21",
+			"frontleft1": "40",
+			"frontleft2": "19",
 			"firstFront": "44",
-			"index": "1051072"
+			"index": "1051712"
 		},
 		"Dia90": {
 			"ang": "90",
 			"radius": "80",
-			"front1": "23",
+			"front1": "15",
 			"back1": "14",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.04843902587890625",
 			"n": "4",
 			"v": 1700,
-			"frontleft1": "17",
+			"frontleft1": "11",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051136"
+			"index": "1051776"
 		}
 	},
 	"v1800": {
@@ -271,7 +439,7 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "20",
+			"front1": "21",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
@@ -281,7 +449,7 @@
 			"frontleft1": "19",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051200"
+			"index": "1051840"
 		},
 		"Orval": {
 			"ang": "180",
@@ -296,7 +464,7 @@
 			"frontleft1": "5",
 			"frontleft2": "10",
 			"firstFront": "0",
-			"index": "1051264"
+			"index": "1051904"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -311,7 +479,7 @@
 			"frontleft1": "14",
 			"frontleft2": "48",
 			"firstFront": "30",
-			"index": "1051328"
+			"index": "1051968"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -326,7 +494,7 @@
 			"frontleft1": "41",
 			"frontleft2": "21",
 			"firstFront": "0",
-			"index": "1051392"
+			"index": "1052032"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -341,7 +509,7 @@
 			"frontleft1": "16.5",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051456"
+			"index": "1052096"
 		}
 	},
 	"v1900": {
@@ -349,17 +517,17 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "19",
+			"front1": "24",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.06500244140625",
 			"n": "4",
 			"v": 1900,
-			"frontleft1": "19",
+			"frontleft1": "24",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051520"
+			"index": "1052160"
 		},
 		"Orval": {
 			"ang": "180",
@@ -374,7 +542,7 @@
 			"frontleft1": "5",
 			"frontleft2": "15",
 			"firstFront": "0",
-			"index": "1051584"
+			"index": "1052224"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -389,7 +557,7 @@
 			"frontleft1": "13",
 			"frontleft2": "49",
 			"firstFront": "0",
-			"index": "1051648"
+			"index": "1052288"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -404,7 +572,7 @@
 			"frontleft1": "11",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051712"
+			"index": "1052352"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -419,7 +587,7 @@
 			"frontleft1": "15",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051776"
+			"index": "1052416"
 		}
 	},
 	"v1950": {
@@ -427,17 +595,17 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "20",
+			"front1": "23",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.0633392333984375",
 			"n": "4",
 			"v": 1950,
-			"frontleft1": "17",
+			"frontleft1": "23",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1051840"
+			"index": "1052480"
 		},
 		"Orval": {
 			"ang": "180",
@@ -452,7 +620,7 @@
 			"frontleft1": "5",
 			"frontleft2": "15",
 			"firstFront": "0",
-			"index": "1051904"
+			"index": "1052544"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -467,7 +635,7 @@
 			"frontleft1": "13",
 			"frontleft2": "58",
 			"firstFront": "0",
-			"index": "1051968"
+			"index": "1052608"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -482,7 +650,7 @@
 			"frontleft1": "30",
 			"frontleft2": "12",
 			"firstFront": "0",
-			"index": "1052032"
+			"index": "1052672"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -497,7 +665,7 @@
 			"frontleft1": "7",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052096"
+			"index": "1052736"
 		}
 	},
 	"v2000": {
@@ -505,17 +673,17 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "18",
+			"front1": "24",
 			"back1": "20",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.0617523193359375",
 			"n": "4",
 			"v": 2000,
-			"frontleft1": "17",
+			"frontleft1": "20",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052160"
+			"index": "1052800"
 		},
 		"Orval": {
 			"ang": "180",
@@ -530,7 +698,7 @@
 			"frontleft1": "10",
 			"frontleft2": "45",
 			"firstFront": "0",
-			"index": "1052224"
+			"index": "1052864"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -545,7 +713,7 @@
 			"frontleft1": "9",
 			"frontleft2": "52",
 			"firstFront": "0",
-			"index": "1052288"
+			"index": "1052928"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -560,7 +728,7 @@
 			"frontleft1": "45",
 			"frontleft2": "5",
 			"firstFront": "0",
-			"index": "1052352"
+			"index": "1052992"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -575,7 +743,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052416"
+			"index": "1053056"
 		}
 	},
 	"v2050": {
@@ -583,17 +751,17 @@
 		"Large": {
 			"ang": "90",
 			"radius": "120",
-			"front1": "15",
-			"back1": "30",
+			"front1": "21",
+			"back1": "20",
 			"front2": "0",
 			"back2": "0",
 			"time": "0.06024932861328125",
 			"n": "4",
 			"v": 2050,
-			"frontleft1": "15",
+			"frontleft1": "21",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052480"
+			"index": "1053120"
 		},
 		"Orval": {
 			"ang": "180",
@@ -608,7 +776,7 @@
 			"frontleft1": "10",
 			"frontleft2": "10",
 			"firstFront": "0",
-			"index": "1052544"
+			"index": "1053184"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -623,7 +791,7 @@
 			"frontleft1": "7",
 			"frontleft2": "48",
 			"firstFront": "0",
-			"index": "1052608"
+			"index": "1053248"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -638,7 +806,7 @@
 			"frontleft1": "15",
 			"frontleft2": "6",
 			"firstFront": "0",
-			"index": "1052672"
+			"index": "1053312"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -653,7 +821,7 @@
 			"frontleft1": "16",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052736"
+			"index": "1053376"
 		}
 	},
 	"v2100": {
@@ -671,7 +839,7 @@
 			"frontleft1": "14",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052800"
+			"index": "1053440"
 		},
 		"Orval": {
 			"ang": "180",
@@ -686,7 +854,7 @@
 			"frontleft1": "5",
 			"frontleft2": "15",
 			"firstFront": "0",
-			"index": "1052864"
+			"index": "1053504"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -701,7 +869,7 @@
 			"frontleft1": "15",
 			"frontleft2": "45",
 			"firstFront": "0",
-			"index": "1052928"
+			"index": "1053568"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -716,7 +884,7 @@
 			"frontleft1": "10",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1052992"
+			"index": "1053632"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -731,7 +899,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053056"
+			"index": "1053696"
 		}
 	},
 	"v2200": {
@@ -749,7 +917,7 @@
 			"frontleft1": "12.5",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053120"
+			"index": "1053760"
 		},
 		"Orval": {
 			"ang": "180",
@@ -764,7 +932,7 @@
 			"frontleft1": "5",
 			"frontleft2": "15",
 			"firstFront": "0",
-			"index": "1053184"
+			"index": "1053824"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -779,7 +947,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053248"
+			"index": "1053888"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -794,7 +962,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053312"
+			"index": "1053952"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -809,7 +977,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053376"
+			"index": "1054016"
 		}
 	},
 	"v2300": {
@@ -827,7 +995,7 @@
 			"frontleft1": "7",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053440"
+			"index": "1054080"
 		},
 		"Orval": {
 			"ang": "180",
@@ -842,7 +1010,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053504"
+			"index": "1054144"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -857,7 +1025,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053568"
+			"index": "1054208"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -872,7 +1040,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053632"
+			"index": "1054272"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -887,7 +1055,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053696"
+			"index": "1054336"
 		}
 	},
 	"v2400": {
@@ -905,7 +1073,7 @@
 			"frontleft1": "10",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053760"
+			"index": "1054400"
 		},
 		"Orval": {
 			"ang": "180",
@@ -920,7 +1088,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053824"
+			"index": "1054464"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -935,7 +1103,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053888"
+			"index": "1054528"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -950,7 +1118,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1053952"
+			"index": "1054592"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -965,7 +1133,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054016"
+			"index": "1054656"
 		}
 	},
 	"v2500": {
@@ -983,7 +1151,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054080"
+			"index": "1054720"
 		},
 		"Orval": {
 			"ang": "180",
@@ -998,7 +1166,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054144"
+			"index": "1054784"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -1013,7 +1181,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054208"
+			"index": "1054848"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -1028,7 +1196,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054272"
+			"index": "1054912"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -1043,7 +1211,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054336"
+			"index": "1054976"
 		}
 	},
 	"v2600": {
@@ -1061,7 +1229,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054400"
+			"index": "1055040"
 		},
 		"Orval": {
 			"ang": "180",
@@ -1076,7 +1244,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054464"
+			"index": "1055104"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -1091,7 +1259,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054528"
+			"index": "1055168"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -1106,7 +1274,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054592"
+			"index": "1055232"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -1121,7 +1289,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054656"
+			"index": "1055296"
 		}
 	},
 	"v2700": {
@@ -1139,7 +1307,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054720"
+			"index": "1055360"
 		},
 		"Orval": {
 			"ang": "180",
@@ -1154,7 +1322,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054784"
+			"index": "1055424"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -1169,7 +1337,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054848"
+			"index": "1055488"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -1184,7 +1352,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054912"
+			"index": "1055552"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -1199,7 +1367,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1054976"
+			"index": "1055616"
 		}
 	},
 	"v2800": {
@@ -1217,7 +1385,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055040"
+			"index": "1055680"
 		},
 		"Orval": {
 			"ang": "180",
@@ -1232,7 +1400,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055104"
+			"index": "1055744"
 		},
 		"Dia45": {
 			"ang": "45",
@@ -1247,7 +1415,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055168"
+			"index": "1055808"
 		},
 		"Dia135": {
 			"ang": "135",
@@ -1262,7 +1430,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055232"
+			"index": "1055872"
 		},
 		"Dia90": {
 			"ang": "90",
@@ -1277,7 +1445,7 @@
 			"frontleft1": "0",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055296"
+			"index": "1055936"
 		}
 	},
 	"v3000": {
@@ -1295,7 +1463,7 @@
 			"frontleft1": "8",
 			"frontleft2": "0",
 			"firstFront": "0",
-			"index": "1055360"
+			"index": "1056000"
 		}
 	}
 }

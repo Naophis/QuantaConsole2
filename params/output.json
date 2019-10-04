@@ -6,25 +6,25 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.001064125",
+				"value": "0.00106348",
 				"descript": "ゲイン(ジャイロ)右回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.001064125",
+				"value": "0.00106348",
 				"descript": "ゲイン(ジャイロ)左回転 0.0010675 0.00106050"
 			},
 			{
 				"id": 1049352,
 				"name": "Vel.Kp",
-				"value": "0.01",
+				"value": "0.0075",
 				"descript": "重心速度ゲイン P 0.00235 0.00225 0.00265 0.01"
 			},
 			{
 				"id": 1049356,
 				"name": "Vel.Ki",
-				"value": "0.005",
+				"value": "0.0035",
 				"descript": "重心速度ゲイン I 0.000875 0.000925"
 			},
 			{
@@ -36,14 +36,14 @@
 			{
 				"id": 1049364,
 				"name": "Gyro.Kp",
-				"value": "1.75",
+				"value": "1.25",
 				"descript": "角速度ゲイン P 1.45   1.15 0.75 0.5    1.25"
 			},
 			{
 				"id": 1049368,
 				"name": "Gyro.Ki",
-				"value": "0.0175",
-				"descript": "角速度ゲイン I 0.03975 0.0125  0.0185 0.0215 0.03 75 100  325"
+				"value": "0.0125",
+				"descript": "角速度ゲイン I 0.0125"
 			},
 			{
 				"id": 1049372,
@@ -54,8 +54,8 @@
 			{
 				"id": 1049376,
 				"name": "Sen.Kp",
-				"value": "0.015",
-				"descript": "通常時直進ゲイン P0.02 0.0025"
+				"value": "0.005",
+				"descript": "通常時直進ゲイン P0.02 0.0025 0.00125"
 			},
 			{
 				"id": 1049380,
@@ -203,12 +203,12 @@
 			{
 				"id": 1049484,
 				"name": "vOrder",
-				"value": "111"
+				"value": "250"
 			},
 			{
 				"id": 1049488,
 				"name": "wOrder",
-				"value": "1111"
+				"value": "1"
 			},
 			{
 				"id": 1049492,
@@ -218,7 +218,22 @@
 			{
 				"id": 1049496,
 				"name": "start_offset",
-				"value": "48"
+				"value": "41"
+			},
+			{
+				"id": 1049500,
+				"name": "R90_order",
+				"value": "1"
+			},
+			{
+				"id": 1049504,
+				"name": "L90_order",
+				"value": "590"
+			},
+			{
+				"id": 1049508,
+				"name": "disableGyroReset",
+				"value": "0"
 			}
 		]
 	},
@@ -235,7 +250,7 @@
 			{
 				"id": 1049604,
 				"name": "LS_SEN45.ref",
-				"value": "840",
+				"value": "660",
 				"descript": "直進　左センサー　ref"
 			},
 			{
@@ -450,7 +465,7 @@
 			{
 				"id": 1049748,
 				"name": "gyrodifflimit",
-				"value": "90.5",
+				"value": "100",
 				"descript": "4.5"
 			},
 			{
@@ -524,17 +539,20 @@
 			{
 				"id": 1049804,
 				"name": "Veclocity_oldEnable",
-				"value": "1"
+				"value": "1",
+				"descript": "速度型PID有効１．無効０"
 			},
 			{
 				"id": 1049808,
 				"name": "Gyro_oldEnable",
-				"value": "1"
+				"value": "1",
+				"descript": "速度型PID有効１．無効０"
 			},
 			{
 				"id": 1049812,
 				"name": "Sensor_oldEnable",
-				"value": "0"
+				"value": "1",
+				"descript": "速度型PID有効１．無効０"
 			},
 			{
 				"id": 1049816,
@@ -566,12 +584,12 @@
 			{
 				"id": 1049836,
 				"name": "FrontCtrl3_th",
-				"value": "0"
+				"value": "800"
 			},
 			{
 				"id": 1049840,
 				"name": "FRONT_CTRL_3",
-				"value": "2000"
+				"value": "1800"
 			},
 			{
 				"id": 1049844,
@@ -599,7 +617,7 @@
 			{
 				"id": 1049860,
 				"name": "L_WALL_OFF",
-				"value": "680",
+				"value": "500",
 				"descript": "壁切れ閾値"
 			},
 			{
@@ -623,20 +641,20 @@
 			{
 				"id": 1049876,
 				"name": "L_WALL_OFF_D",
-				"value": "1650",
+				"value": "1450",
 				"descript": "斜め壁切れの閾値（L）"
 			},
 			{
 				"id": 1049880,
 				"name": "existRightWall5",
-				"value": "0",
-				"descript": "無効"
+				"value": "10000",
+				"descript": "無効 10000 固定"
 			},
 			{
 				"id": 1049884,
 				"name": "existLeftWall5",
-				"value": "0",
-				"descript": "No Need"
+				"value": "10000",
+				"descript": "無効 10000 固定"
 			},
 			{
 				"id": 1049888,
@@ -665,7 +683,7 @@
 			{
 				"id": 1049904,
 				"name": "DIA_N_LEFT_WALL",
-				"value": "975",
+				"value": "875",
 				"descript": "斜め壁アリ補正（R）"
 			},
 			{
@@ -720,7 +738,7 @@
 				"id": 1049940,
 				"name": "fastRunFan",
 				"value": "8.25",
-				"descript": "9.0"
+				"descript": "9.0 8.25"
 			},
 			{
 				"id": 1049944,
@@ -767,7 +785,7 @@
 				"id": 1049972,
 				"name": "kireme_R",
 				"value": "14",
-				"descript": "壁制御　切れ目オーダー"
+				"descript": "壁制御　切れ目オーダー 14"
 			},
 			{
 				"id": 1049976,
@@ -778,12 +796,13 @@
 			{
 				"id": 1049980,
 				"name": "seachFanLow",
-				"value": "4.5"
+				"value": "6",
+				"descript": "4.5"
 			},
 			{
 				"id": 1049984,
 				"name": "fastRunFanV2",
-				"value": "9",
+				"value": "10",
 				"descript": "10.0 9.25"
 			},
 			{
@@ -821,6 +840,11 @@
 				"id": 1050012,
 				"name": "calibratedist2",
 				"value": "60"
+			},
+			{
+				"id": 1050016,
+				"name": "FAN_AMP5",
+				"value": "1.0"
 			}
 		]
 	},
@@ -831,8 +855,8 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.965",
-				"descript": "タイヤ直径(mm)"
+				"value": "25.1",
+				"descript": "タイヤ直径(mm) 23.965"
 			},
 			{
 				"id": 1049220,
@@ -891,7 +915,7 @@
 			{
 				"id": 1049256,
 				"name": "friction2",
-				"value": "0.000125",
+				"value": "0.0035",
 				"descript": "摩擦係数（直進） 0.000685  0.005"
 			},
 			{
@@ -903,7 +927,7 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "2200",
+				"value": "2000",
 				"descript": "テスト用スラローム速度"
 			},
 			{
@@ -915,7 +939,7 @@
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "2200",
+				"value": "2000",
 				"descript": "テスト用最高速度"
 			},
 			{
@@ -951,7 +975,7 @@
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "1080",
+				"value": "900",
 				"descript": "テスト直進"
 			},
 			{
@@ -963,7 +987,7 @@
 			{
 				"id": 1049304,
 				"name": "test_turn_angle",
-				"value": "3600",
+				"value": "360",
 				"descript": "テスト超信地回転角"
 			},
 			{
