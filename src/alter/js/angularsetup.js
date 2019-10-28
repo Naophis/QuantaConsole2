@@ -37,9 +37,11 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
     $scope.load = function (id) {
         socket.emit("load", "fastrun.json");
     }
-    $scope.all_write = function (id) {
-        socket.emit("all_write");
+    $scope.all_write2 = function (id) {
+        console.log("click")
+        socket.emit("all_write2", "fastrun.json");
     }
+
     $scope.connect = function (id) {
         let target = $.isNumeric(id) ? id : null;
         socket.emit("load", id);
@@ -200,8 +202,8 @@ function createStr(rows, index) {
     // index += 4;
     // str += `firstfront=*(float *)${index};//myprintf("firstfront\t%f\t%d\\r\\n",firstfront,${index});\r\n`;
     // str += `setPrms(${rows[1]},  ang, radius,  front1,
-	// 	 back1,  front2,  back2,  time,  n, v) ;
-	// setPrms3(${rows[1]}, frontleft1, frontleft2, firstfront);`
+    // 	 back1,  front2,  back2,  time,  n, v) ;
+    // setPrms3(${rows[1]}, frontleft1, frontleft2, firstfront);`
     // str += `myprintf("----------------------------------\\r\\n");\r\n}`;
     str += `}`;
 

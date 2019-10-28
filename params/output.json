@@ -6,13 +6,13 @@
 			{
 				"id": 1049344,
 				"name": "gyroTh_R",
-				"value": "0.00106535",
+				"value": "0.00106575",
 				"descript": "ゲイン(ジャイロ)右回転 0.0010635"
 			},
 			{
 				"id": 1049348,
 				"name": "gyroTh_L",
-				"value": "0.00106535",
+				"value": "0.00106575",
 				"descript": "ゲイン(ジャイロ)左回転 0.0010675 0.00106050"
 			},
 			{
@@ -36,13 +36,13 @@
 			{
 				"id": 1049364,
 				"name": "Gyro.Kp",
-				"value": "1.45",
+				"value": "1.25",
 				"descript": "角速度ゲイン P 1.45   1.15 0.75 0.5    1.25"
 			},
 			{
 				"id": 1049368,
 				"name": "Gyro.Ki",
-				"value": "0.0215",
+				"value": "0.015",
 				"descript": "角速度ゲイン I 0.0125"
 			},
 			{
@@ -73,7 +73,7 @@
 				"id": 1049388,
 				"name": "Sen_Dia_Side.Kp",
 				"value": "0.0075",
-				"descript": "斜め直進ゲイン P 0.021250 0.0075  0.021250"
+				"descript": "斜め直進ゲイン P 0.0075"
 			},
 			{
 				"id": 1049392,
@@ -102,7 +102,7 @@
 			{
 				"id": 1049408,
 				"name": "autostart",
-				"value": "1",
+				"value": "0",
 				"descript": "オートスタート"
 			},
 			{
@@ -182,7 +182,7 @@
 			{
 				"id": 1049468,
 				"name": "CgLimit",
-				"value": "10",
+				"value": "200",
 				"descript": "4.5 6.5"
 			},
 			{
@@ -208,7 +208,8 @@
 			{
 				"id": 1049488,
 				"name": "wOrder",
-				"value": "0.5"
+				"value": "0.37",
+				"descript": "0.5 0.34"
 			},
 			{
 				"id": 1049492,
@@ -459,20 +460,20 @@
 			{
 				"id": 1049716,
 				"name": "search_wall_off_l",
-				"value": "700",
+				"value": "300",
 				"descript": "探索　壁切れ　閾値"
 			},
 			{
 				"id": 1049720,
 				"name": "search_wall_off_r",
-				"value": "700",
+				"value": "300",
 				"descript": "探索　壁切れ　閾値"
 			},
 			{
 				"id": 1049724,
 				"name": "FRONT_CTRL_1",
-				"value": "850",
-				"descript": "前壁補正 842"
+				"value": "775",
+				"descript": "前壁補正 842 850"
 			},
 			{
 				"id": 1049728,
@@ -506,7 +507,7 @@
 			{
 				"id": 1049748,
 				"name": "gyrodifflimit",
-				"value": "10",
+				"value": "40",
 				"descript": "4.5"
 			},
 			{
@@ -642,6 +643,11 @@
 				"id": 1049848,
 				"name": "gyroAngleCtrl",
 				"value": "0"
+			},
+			{
+				"id": 1049852,
+				"name": "minVoltage",
+				"value": "10.5"
 			}
 		]
 	},
@@ -742,13 +748,13 @@
 			{
 				"id": 1049916,
 				"name": "searchWallOffDistR",
-				"value": "21",
+				"value": "16",
 				"descript": "19"
 			},
 			{
 				"id": 1049920,
 				"name": "searchWallOffDistL",
-				"value": "20.5",
+				"value": "18",
 				"descript": "19.5"
 			},
 			{
@@ -778,7 +784,7 @@
 			{
 				"id": 1049940,
 				"name": "fastRunFan",
-				"value": "9.0",
+				"value": "10.5",
 				"descript": "9.0 8.25"
 			},
 			{
@@ -885,7 +891,7 @@
 			{
 				"id": 1050016,
 				"name": "FAN_AMP5",
-				"value": "1.0"
+				"value": "9"
 			},
 			{
 				"id": 1050020,
@@ -905,7 +911,7 @@
 			{
 				"id": 1050032,
 				"name": "diagonal_chopp_L",
-				"value": "1450"
+				"value": "1200"
 			}
 		]
 	},
@@ -916,8 +922,8 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "23.775",
-				"descript": "タイヤ直径(mm) 23.965 25.045"
+				"value": "23.7",
+				"descript": "タイヤ直径(mm) 23.965 25.045 23.7 24.9125"
 			},
 			{
 				"id": 1049220,
@@ -958,7 +964,7 @@
 			{
 				"id": 1049244,
 				"name": "Mass",
-				"value": "0.11",
+				"value": "0.2",
 				"descript": "質量(kg) 0.112"
 			},
 			{
@@ -976,7 +982,7 @@
 			{
 				"id": 1049256,
 				"name": "friction2",
-				"value": "0.000685",
+				"value": "0.000385",
 				"descript": "摩擦係数（直進） 0.000685  0.005 0.0035"
 			},
 			{
@@ -988,7 +994,7 @@
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "1500",
+				"value": "1800",
 				"descript": "テスト用スラローム速度"
 			},
 			{
@@ -1000,7 +1006,7 @@
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "1500",
+				"value": "1800",
 				"descript": "最高速度"
 			},
 			{
@@ -1012,7 +1018,7 @@
 			{
 				"id": 1049280,
 				"name": "test_sla_scenario",
-				"value": "1",
+				"value": "4",
 				"descript": "スラロームのシナリオパターン"
 			},
 			{
@@ -1072,13 +1078,13 @@
 			{
 				"id": 1049320,
 				"name": "searchTurn",
-				"value": "500",
+				"value": "1000",
 				"descript": "探索速度"
 			},
 			{
 				"id": 1049324,
 				"name": "searchAccel",
-				"value": "2500",
+				"value": "5000",
 				"descript": "探索加速度"
 			},
 			{

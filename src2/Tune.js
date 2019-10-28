@@ -69,6 +69,85 @@ class Tune {
         });
     }
 
+    static all_write(target, port) {
+        target = `params/${target}`;
+
+        async function sleep2(delay, result) {
+            return new Promise(resolve => {
+                setTimeout(() => resolve(result), delay);
+            });
+        }
+
+        async function exec2(data) {
+            let json = JSON.parse(data);
+            const keys1 = Object.keys(json);
+            console.log(keys1);
+            let counter = 0;
+            const waitTime = 40;
+            for (let j = 0; j < keys1.length; j++) {
+                const key1 = keys1[j];
+                const list = json[key1].list;
+                for (let i = 0; i < list.length; i++) {
+                    await sleep2(waitTime, i + 1);
+                    let index = list[i].id;
+                    let param = list[i].value;
+                    console.log(index, param);
+                    port.write(`{${index}:${param}}`, function () {});
+                    counter++;
+                }
+            }
+            console.log(`write amount ${counter}`);
+        }
+        readFile(target, function (data) {
+            exec2(data);
+        });
+    }
+
+
+    static all_write2(target, port) {
+        target = `params/${target}`;
+
+        async function sleep2(delay, result) {
+            return new Promise(resolve => {
+                setTimeout(() => resolve(result), delay);
+            });
+        }
+
+        async function exec2(data) {
+            let json = JSON.parse(data);
+            const keys1 = Object.keys(json);
+            let counter = 0;
+            for (let j = 0; j < keys1.length; j++) {
+                const key1 = keys1[j];
+                const paramlist = json[key1];
+                delete paramlist.velocity;
+                const keys2 = Object.keys(paramlist);
+                for (let k = 0; k < keys2.length; k++) {
+                    const key2 = keys2[k];
+                    const paramlist2 = paramlist[key2];
+                    let idx = parseInt(paramlist2.index);
+                    delete paramlist2.index;
+
+                    const keys3 = Object.keys(paramlist2);
+                    for (let m = 0; m < keys3.length; m++) {
+                        await sleep2(10);
+                        const key3 = keys3[m];
+                        const param = paramlist2[key3];
+                        console.log(idx, param);
+                        port.write(`{${idx}:${param}}`, function () {});
+                        idx += 4;
+                        counter++;
+                    }
+                }
+
+            }
+            console.log(`write amount ${counter}`);
+        }
+        readFile(target, function (data) {
+            exec2(data);
+        });
+    }
+
     static write(param, port) {
         // delayミリ秒待機する。任意の第二引数を結果として返す。
         async function sleep(delay, result) {
@@ -80,9 +159,8 @@ class Tune {
             let index = parseInt(param.index);
             delete param.index;
             const keys = Object.keys(param);
-            
             for (let i = 0; i < keys.length; i++) {
-                await sleep(50);
+                await sleep(40);
                 console.log(index, param[keys[i]]);
                 port.write(`{${index}:${param[keys[i]]}}`, function () {});
                 index += 4;

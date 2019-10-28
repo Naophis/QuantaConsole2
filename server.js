@@ -90,9 +90,13 @@ let ready = function () {
                 Tune.load(target, socket);
             }
         });
-        
+
         socket.on("all_write", function (target) {
-            Tune.load(target, socket);
+            Tune.all_write(target, port);
+        });
+        socket.on("all_write2", function (target) {
+            console.log("server recieve")
+            Tune.all_write2(target, port);
         });
     });
 }

@@ -278,5 +278,9 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         document.execCommand('copy');
     }
 
+    $scope.all_write = function (id) {
+        socket.emit("all_write", "output.json");
+    }
+
     $scope.allSensordata = "";
 }]);
