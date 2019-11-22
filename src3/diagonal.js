@@ -70,60 +70,68 @@ while (reader.next()) {
 }
 reader.close();
 
-var l45 = `float sen_l_dia_img[255] = {`;
+var l45 = "= {";
 var reader2 = new LineReader("src3/res/logL45.txt");
+var idx = 0;
 while (reader2.next()) {
     var line = reader2.line;
     var num = parseFloat(line);
     if (num + 0 === num) {
+        idx++;
         l45 += `${line},`;
     }
 }
 l45 = l45.slice(0, -1);
-l45 += `};\r\n`;
-fs.appendFileSync(`${targetDir}/result.txt`, l45);
+l45 += "};\r\n";
+fs.appendFileSync(`${targetDir}/result.txt`, `float sen_l_dia_img[${idx}] ${l45}`);
 reader2.close();
 
-var r45 = `float sen_r_dia_img[255] = {`;
+var r45 = ` = {`;
 var reader2 = new LineReader("src3/res/logR45.txt");
+var idx = 0;
 while (reader2.next()) {
     var line = reader2.line;
     var num = parseFloat(line);
     if (num + 0 === num) {
+        idx++;
         r45 += `${line},`;
     }
 }
 r45 = r45.slice(0, -1);
 r45 += `};\r\n`;
-fs.appendFileSync(`${targetDir}/result.txt`, r45);
+fs.appendFileSync(`${targetDir}/result.txt`, `float sen_r_dia_img[${idx}] ${r45}`);
 reader2.close();
 
-var r90 = `float sen_r90_dia[255] = {`;
+var r90 = ` = {`;
 var reader2 = new LineReader("src3/res/logR90.txt");
+var idx = 0;
 while (reader2.next()) {
     var line = reader2.line;
     var num = parseFloat(line);
     if (num + 0 === num) {
+        idx++;
         r90 += `${line},`;
     }
 }
 r90 = r90.slice(0, -1);
 r90 += `};\r\n`;
-fs.appendFileSync(`${targetDir}/result.txt`, r90);
+fs.appendFileSync(`${targetDir}/result.txt`, `float sen_r90_dia[${idx}] ${r90}`);
 reader2.close();
 
-var l90 = `float sen_l90_dia[255] = {`;
+var l90 = `= {`;
 var reader2 = new LineReader("src3/res/logL90.txt");
+var idx = 0;
 while (reader2.next()) {
     var line = reader2.line;
     var num = parseFloat(line);
     if (num + 0 === num) {
+        idx++;
         l90 += `${line},`;
     }
 }
 l90 = l90.slice(0, -1);
 l90 += `};\r\n`;
-fs.appendFileSync(`${targetDir}/result.txt`, l90);
+fs.appendFileSync(`${targetDir}/result.txt`, `float sen_l90_dia[${idx}] ${l90}`);
 reader2.close();
 
 
