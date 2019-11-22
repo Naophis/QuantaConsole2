@@ -4,9 +4,10 @@
   "description": "",
   "main": "console.js",
   "dependencies": {
+    "@serialport/list": "^8.0.4",
     "express": "^4.16.3",
-    "socket.io": "^2.1.0",
-    "serialport": "^6.2.0"
+    "serialport": "^8.0.5",
+    "socket.io": "^2.1.0"
   },
   "devDependencies": {},
   "scripts": {

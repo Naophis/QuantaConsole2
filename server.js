@@ -3,21 +3,26 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const PORT = process.env.PORT || 3000;
 let SerialPort = require('serialport');
-const Readline = require('parser-readline');
+const Readline = require('@serialport/parser-readline');
 const Tune = require("./src2/Tune");
 let comport = "";
 
-SerialPort.list(function (err, port) {
-    for (let i in port) {
-        const p = port[i];
-        if (p.comName.match(/usbserial/) || p.comName.match(/COM/)) {
-            comport = p.comName;
-            break;
+SerialPort.list().then((ports) => {
+        for (let i in ports) {
+            const p = ports[i];
+            console.log(p.path, p.serialNumber);
+            if (p.path.match(/usbserial/) || p.path.match(/COM/)) {
+                if (p.serialNumber) {
+                    comport = p.path;
+                    console.log(`select: ${comport}`);
+                    ready();
+                    break;
+                }
+            }
         }
-    }
-    ready();
-})
-
+    },
+    err => console.error(err)
+);
 app.get(`/*`, (req, res) => {
     res.sendFile(`${__dirname}/src${req.url}`);
 });
