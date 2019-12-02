@@ -281,6 +281,11 @@
 				"id": 1049544,
 				"name": "exrp",
 				"value": "24"
+			},
+			{
+				"id": 1049548,
+				"name": "start_offset_transam",
+				"value": "10"
 			}
 		]
 	},
@@ -291,8 +296,8 @@
 			{
 				"id": 1049600,
 				"name": "RS_SEN45.ref",
-				"value": "605",
-				"descript": "直進　右センサー　ref 885"
+				"value": "560",
+				"descript": "直進　右センサー　ref 605"
 			},
 			{
 				"id": 1049604,
@@ -477,7 +482,7 @@
 			{
 				"id": 1049724,
 				"name": "FRONT_CTRL_1",
-				"value": "850",
+				"value": "830",
 				"descript": "前壁補正 775"
 			},
 			{
@@ -759,7 +764,7 @@
 			{
 				"id": 1049920,
 				"name": "searchWallOffDistL",
-				"value": "12",
+				"value": "15",
 				"descript": "19.5"
 			},
 			{
@@ -795,25 +800,25 @@
 			{
 				"id": 1049944,
 				"name": "RS_SEN45.ref2",
-				"value": "10000",
+				"value": "300",
 				"descript": "No Need"
 			},
 			{
 				"id": 1049948,
 				"name": "RS_SEN45.th2",
-				"value": "5000",
+				"value": "985",
 				"descript": "No Need"
 			},
 			{
 				"id": 1049952,
 				"name": "LS_SEN45.ref2",
-				"value": "7630",
+				"value": "190",
 				"descript": "No Need"
 			},
 			{
 				"id": 1049956,
 				"name": "LS_SEN45.th2",
-				"value": "4500",
+				"value": "250",
 				"descript": "No Need"
 			},
 			{
@@ -824,13 +829,13 @@
 			{
 				"id": 1049964,
 				"name": "rightCtrlDiff",
-				"value": "150",
+				"value": "180",
 				"descript": "壁制御　マイナス方向許容値"
 			},
 			{
 				"id": 1049968,
 				"name": "leftCtrlDiff",
-				"value": "150",
+				"value": "180",
 				"descript": "壁制御　マイナス方向許容値"
 			},
 			{
@@ -896,18 +901,18 @@
 			{
 				"id": 1050016,
 				"name": "FAN_AMP5",
-				"value": "11",
+				"value": "11.75",
 				"descript": "吸引テスト"
 			},
 			{
 				"id": 1050020,
 				"name": "R90_exist",
-				"value": "1"
+				"value": "-1"
 			},
 			{
 				"id": 1050024,
 				"name": "L90_exist",
-				"value": "1"
+				"value": "-1"
 			},
 			{
 				"id": 1050028,
@@ -927,7 +932,7 @@
 			{
 				"id": 1050040,
 				"name": "accelMode",
-				"value": "0"
+				"value": "2"
 			},
 			{
 				"id": 1050044,
@@ -937,7 +942,7 @@
 			{
 				"id": 1050048,
 				"name": "limit",
-				"value": "12"
+				"value": "8"
 			},
 			{
 				"id": 1050052,
@@ -952,7 +957,43 @@
 			{
 				"id": 1050060,
 				"name": "fastrun_wheel",
-				"value": "24.80"
+				"value": "24.90",
+				"descript": "24.95"
+			},
+			{
+				"id": 1050064,
+				"name": "start_music1",
+				"value": "3"
+			},
+			{
+				"id": 1050068,
+				"name": "start_music1_time",
+				"value": "150"
+			},
+			{
+				"id": 1050072,
+				"name": "transam_music1",
+				"value": "0"
+			},
+			{
+				"id": 1050076,
+				"name": "transam_music1_time",
+				"value": "200"
+			},
+			{
+				"id": 1050080,
+				"name": "Sen.Kp2",
+				"value": "0.01"
+			},
+			{
+				"id": 1050084,
+				"name": "Sen.Ki2",
+				"value": "0"
+			},
+			{
+				"id": 1050088,
+				"name": "Sen.Kd2",
+				"value": "0.01"
 			}
 		]
 	},
@@ -963,8 +1004,8 @@
 			{
 				"id": 1049216,
 				"name": "TIRE",
-				"value": "25.085",
-				"descript": "タイヤ直径(mm) 23.965 25.045 23.7 24.9125"
+				"value": "25.035",
+				"descript": "タイヤ直径(mm) 25.0825"
 			},
 			{
 				"id": 1049220,
@@ -1029,31 +1070,31 @@
 			{
 				"id": 1049260,
 				"name": "testCmd",
-				"value": "14",
+				"value": "0",
 				"descript": "実行モード"
 			},
 			{
 				"id": 1049264,
 				"name": "testSlalom3_v",
-				"value": "1800",
+				"value": "500",
 				"descript": "テスト用スラローム速度"
 			},
 			{
 				"id": 1049268,
 				"name": "test_acc",
-				"value": "18000",
+				"value": "1800",
 				"descript": "テスト用加速度"
 			},
 			{
 				"id": 1049272,
 				"name": "test_max_v",
-				"value": "4000",
+				"value": "600",
 				"descript": "最高速度"
 			},
 			{
 				"id": 1049276,
 				"name": "test_dia",
-				"value": "1",
+				"value": "0",
 				"descript": "強制斜めモード"
 			},
 			{
@@ -1083,7 +1124,7 @@
 			{
 				"id": 1049296,
 				"name": "test_distance",
-				"value": "900",
+				"value": "400",
 				"descript": "テスト直進"
 			},
 			{
@@ -1143,13 +1184,13 @@
 			{
 				"id": 1049336,
 				"name": "goalX",
-				"value": "3",
+				"value": "0",
 				"descript": "ゴール座標X"
 			},
 			{
 				"id": 1049340,
 				"name": "goalY",
-				"value": "0",
+				"value": "3",
 				"descript": "ゴール座標Y"
 			}
 		]
