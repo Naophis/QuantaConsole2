@@ -11,7 +11,7 @@ SerialPort.list().then((ports) => {
         for (let i in ports) {
             const p = ports[i];
             console.log(p.path, p.serialNumber);
-            if (p.path.match(/usbserial/) || p.path.match(/COM/)) {
+            if (p.path.match(/usbserial/) || p.path.match(/COM/) || p.path.match(/ttyUSB/)) {
                 if (p.serialNumber) {
                     comport = p.path;
                     console.log(`select: ${comport}`);
